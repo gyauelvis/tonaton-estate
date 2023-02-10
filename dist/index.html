@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,26 @@
     <title>tonaton estate</title>
     <link rel="stylesheet" href="output.css">
 </head>
+
 <body>
     <!-- Making the search bar at the top -->
     <nav>
-        <section class="search-bar flex justify-center items-center bg-green-400 h-20 sticky top-0 left-0 right-0 lg:justify-between md:justify-between md:px-10 md:h-20 lg:px-20 lg:h-16">
+        <section
+            class="search-bar flex justify-center items-center bg-green-400 h-20 sticky top-0 left-0 right-0 lg:justify-between md:justify-between md:px-10 md:h-20 lg:px-20 lg:h-16">
             <div class="flex justify-evenly flex-row">
                 <a href="#" class="font-bold text-4xl hidden md:block font-serif text-white lg:block mx-4">tonaton</a>
                 <div class="before:content-none">
-                <input placeholder="Search in Property" type="search" class="bg-white rounded-full h-10 w-[95vw] py-6 px-10 focus:outline-none md:w-[30vw] lg:w-[30vw] lg:py-4" name="search" id="search">
+                    <input placeholder="Search in Property" type="search"
+                        class="bg-white rounded-full h-10 w-[95vw] py-6 px-10 focus:outline-none md:w-[30vw] lg:w-[30vw] lg:py-4"
+                        name="search" id="search">
                 </div>
             </div>
-            <a href="#" class="bg-green-300 hidden text-lg text-white rounded-full px-5 py-1 lg:block md:block hover:bg-green-600">+ Sell</a>
+            <a href="#"
+                class="bg-green-300 hidden text-lg text-white rounded-full px-5 py-1 lg:block md:block hover:bg-green-600">+
+                Sell</a>
         </section>
     </nav>
-    
+
     <main class="md:px-5 lg:px-10 md:bg-gray-100">
         <section class="flex flex-row">
 
@@ -41,9 +48,10 @@
                         <a href="#" class="text-base py-0.5 font-bold text-green-500 underline">Show all 8</a>
                     </div>
                 </div>
-                <a href="#" id="location" class="bg-white w-[19rem] flex font-bold flex-row items-center justify-between rounded-lg border my-1 h-14">
+                <a href="#" id="location"
+                    class="bg-white w-[19rem] flex font-bold flex-row items-center justify-between rounded-lg border my-1 h-14">
                     <span class="px-2 text-base">Location</span>
-                    <span class="px-4 text-xl">></span>
+                    <span class="px-4 text-xl"><img src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/></span>
                 </a>
                 <div id="prices" class="bg-white rounded-lg w-[19rem] px-2 py-2 border my-1">
                     <h2 class="font-bold text-base py-1">Price, GH¢</h2>
@@ -51,24 +59,31 @@
 
                     <div class="flex flex-col px-3 py-1 text-sm">
                         <div class="cursor-pointer py-2 text-gray-700 flex flex-row gap-5 items-center">
-                            <input type="text" name="min" id="min" placeholder="min" class="border w-24 rounded h-12 p-2 focus:outline-none">
+                            <input type="text" name="min" id="min" placeholder="min"
+                                class="border w-24 rounded h-12 p-2 focus:outline-none">
                             <span class="text-3xl font-thin text-gray-500">-</span>
-                            <input type="text" name="max" id="max" placeholder="max" class="border w-24 rounded h-12 p-2 focus:outline-none">
+                            <input type="text" name="max" id="max" placeholder="max"
+                                class="border w-24 rounded h-12 p-2 focus:outline-none">
                         </div>
                         <div class="cursor-pointer py-0.5 text-gray-700 flex flex-row justify-start items-center">
-                            <input type="radio" name="l670" id="l670"><label class="px-3" for="l670">Under 670 • 2 907 ads</label>
+                            <input type="radio" name="l670" id="l670"><label class="px-3" for="l670">Under 670 • 2 907
+                                ads</label>
                         </div>
                         <div class="cursor-pointer py-0.5 text-gray-700 flex flex-row justify-start items-center">
-                            <input type="radio" name="l670" id="l670"><label class="px-3" for="l670">670 - 4.7 K • 11 630 ads</label>
+                            <input type="radio" name="l670" id="l670"><label class="px-3" for="l670">670 - 4.7 K • 11
+                                630 ads</label>
                         </div>
                         <div class="cursor-pointer py-0.5 text-gray-700 flex flex-row justify-start items-center">
-                            <input type="radio" name="l670" id="l670"><label class="px-3" for="l670">4.7 - 120 K • 19 384 ads</label>
+                            <input type="radio" name="l670" id="l670"><label class="px-3" for="l670">4.7 - 120 K • 19
+                                384 ads</label>
                         </div>
                         <div class="cursor-pointer py-0.5 text-gray-700 flex flex-row justify-start items-center">
-                            <input type="radio" name="l670" id="l670"><label class="px-3" for="l670">120 K - 4.5 M • 12 115 ads</label>
+                            <input type="radio" name="l670" id="l670"><label class="px-3" for="l670">120 K - 4.5 M • 12
+                                115 ads</label>
                         </div>
                         <div class="cursor-pointer py-0.5 text-gray-700 flex flex-row justify-start items-center">
-                            <input type="radio" name="l670" id="l670"><label class="px-3" for="l670">More than 4.5 M • 2 423 ads</label>
+                            <input type="radio" name="l670" id="l670"><label class="px-3" for="l670">More than 4.5 M • 2
+                                423 ads</label>
                         </div>
                         <div class="cursor-pointer py-4 flex flex-row justify-between items-center">
                             <button disabled="disabled" class="text-green-400">Clear</button>
@@ -79,12 +94,19 @@
                 </div>
             </section>
 
-                <section class="md:my-12 lg:my-12">
+            <section class="md:my-12 lg:my-12">
                 <!-- Section of the front page that shows "All Ghana, Price and All filter" -->
                 <div class="flex flex-row justify-start items-start px-2 lg:hidden md:hidden">
-                    <button class="border px-2 py-1 text-xs text-gray-900 border-gray-900 rounded-full mx-1 my-2 lg:hidden">Price, GH¢</button>
-                    <button class="border px-2 py-1 text-xs text-gray-900 border-gray-900 rounded-full mx-1 my-2 lg:hidden">All Ghana</button>
-                    <button class="flex flex-row justify-center text-gray-900 items-center border px-2 py-1 text-xs border-gray-900 rounded-full mx-1 my-2"><img src="/img/tonaton-estate-filter.png" alt=" " class="w-4 mx-1 lg:hidden"> <span>All filter</span></button>
+                    <button
+                        class="border px-2 py-1 text-xs text-gray-900 border-gray-900 rounded-full mx-1 my-2 lg:hidden">Price,
+                        GH¢</button>
+                    <button
+                        class="border px-2 py-1 text-xs text-gray-900 border-gray-900 rounded-full mx-1 my-2 lg:hidden">All
+                        Ghana</button>
+                    <button
+                        class="flex flex-row justify-center text-gray-900 items-center border px-2 py-1 text-xs border-gray-900 rounded-full mx-1 my-2"><img
+                            src="/img/tonaton-estate-filter.png" alt=" " class="w-4 mx-1 lg:hidden"> <span>All
+                            filter</span></button>
                 </div>
 
                 <!-- Section with the property and recommended -->
@@ -92,9 +114,13 @@
                     <div class="text-sm font-bold lg:font-normal">Property in Ghana</div>
 
                     <div class="rounded-full px-3 py-1 bg-green-300 hover:bg-green-600 relative lg:mx-4">
-                        <button type="button" id="filter" class="text-sm text-gray-900 ">Recommended</button>
+                        <button type="button" id="filter" class="text-sm text-gray-900 flex flex-row">
+                            <img src="/img/menu.png" alt=" " class="w-5 h-5 mx-1">
+                            <span>Recommended</span>
+                        </button>
 
-                        <div id="filterWindow" style="display: none;" class="text-gray-900 my-1 py-2 h-28 flex-col absolute rounded-lg top-6 left-0 right-0 bg-white">
+                        <div id="filterWindow" style="display: none;"
+                            class="text-gray-900 my-1 py-2 h-28 flex-col absolute rounded-lg top-6 left-0 right-0 bg-white">
                             <button type="button" class="mb-1 text-sm px-1 text-center">Recommended</button>
                             <button type="button" class="mb-1 text-sm px-1 text-center">Newest</button>
                             <button type="button" class="mb-1 text-sm px-1 text-center">Lowest Price</button>
@@ -104,74 +130,93 @@
                     </div>
                 </div>
 
-                
+
 
                 <!-- The images of properties and their info -->
-                <section class="bg-gray-100 py-2 px-2 flex flex-row md:flex-col lg:flex-row justify-center flex-wrap items-start gap-2 relative">
+                <section
+                    class="bg-gray-100 py-2 px-2 flex flex-row md:flex-col lg:flex-row justify-center flex-wrap items-start gap-2 relative">
 
-                    <button class="bg-white text-left rounded w-[48%] md:w-[100%] lg:w-[48%] md:flex md:flex-row lg:flex lg:flex-row md:h-48 relative hover:shadow-lg border-green-100 border hover:border-white">
-                        <img src="/img/houses (1).jpg" class="rounded md:w-[50%] md:object-cover md:h-[100%] lg:h-[100%]"></img>
+                    <button
+                        class="bg-white text-left rounded w-[48%] md:w-[100%] lg:w-[48%] md:flex md:flex-row lg:flex lg:flex-row md:h-48 relative hover:shadow-lg border-green-100 border hover:border-white">
+                        <img src="/img/houses (1).jpg"
+                            class="rounded md:w-[50%] md:object-cover md:h-[100%] lg:h-[100%]"></img>
                         <div class="flex flex-col px-2">
                             <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
                             <span class="text-xs text-green-500">Outright price</span>
                             <span class="location text-sm py-1">Tsopoli</span>
                             <span class="region text-sm py-1">Greater Accra, Tema Metropolitan</span>
-                            <span class="size text-xs my-1 font-bold bg-gray-100 w-fit py-2 px-3 rounded-full">650 sqm</span>
+                            <span class="size text-xs my-1 font-bold bg-gray-100 w-fit py-2 px-3 rounded-full">650
+                                sqm</span>
                         </div>
                     </button>
 
-                    <button class="bg-white text-left rounded w-[48%] md:w-[100%] lg:w-[48%] md:flex md:flex-row lg:flex lg:flex-row md:h-48 relative hover:shadow-lg border-green-100 border hover:border-white">
-                        <img src="/img/houses (2).jpg" class="rounded md:w-[50%] md:object-cover md:h-[100%] lg:h-[100%]"></img>
+                    <button
+                        class="bg-white text-left rounded w-[48%] md:w-[100%] lg:w-[48%] md:flex md:flex-row lg:flex lg:flex-row md:h-48 relative hover:shadow-lg border-green-100 border hover:border-white">
+                        <img src="/img/houses (2).jpg"
+                            class="rounded md:w-[50%] md:object-cover md:h-[100%] lg:h-[100%]"></img>
                         <div class="flex flex-col px-2">
                             <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
                             <span class="location text-sm py-1">3 bedroom in school junction for sale</span>
                             <span class="region text-xs py-1 text-gray-500">Greater Accra, Tema Metropolitan</span>
                             <span id="furbished-state"></span>
-                            <span class="size text-xs my-1 font-bold bg-gray-100 rounded-full w-fit px-3 py-2">100 sqm</span>
+                            <span class="size text-xs my-1 font-bold bg-gray-100 rounded-full w-fit px-3 py-2">100
+                                sqm</span>
                         </div>
                     </button>
 
-                    <button class="bg-white text-left rounded w-[48%] md:w-[100%] lg:w-[48%] md:flex md:flex-row lg:flex lg:flex-row md:h-48 relative hover:shadow-lg border-green-100 border hover:border-white">
-                        <img src="/img/houses (1).jpg" class="rounded md:w-[50%] md:object-cover md:h-[100%] lg:h-[100%]"></img>
+                    <button
+                        class="bg-white text-left rounded w-[48%] md:w-[100%] lg:w-[48%] md:flex md:flex-row lg:flex lg:flex-row md:h-48 relative hover:shadow-lg border-green-100 border hover:border-white">
+                        <img src="/img/houses (1).jpg"
+                            class="rounded md:w-[50%] md:object-cover md:h-[100%] lg:h-[100%]"></img>
                         <div class="flex flex-col px-2">
                             <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
                             <span class="text-xs text-green-500">Outright price</span>
                             <span class="location text-sm py-1">Tsopoli</span>
                             <span class="region text-sm py-1">Greater Accra, Tema Metropolitan</span>
-                            <span class="size text-xs my-1 font-bold bg-gray-100 w-fit py-2 px-3 rounded-full">650 sqm</span>
+                            <span class="size text-xs my-1 font-bold bg-gray-100 w-fit py-2 px-3 rounded-full">650
+                                sqm</span>
                         </div>
                     </button>
 
-                    <button class="bg-white text-left rounded w-[48%] md:w-[100%] lg:w-[48%] md:flex md:flex-row lg:flex lg:flex-row md:h-48 relative hover:shadow-lg border-green-100 border hover:border-white">
-                        <img src="/img/houses (4).jpg" class="rounded md:w-[50%] md:object-cover md:h-[100%] lg:h-[100%]"></img>
+                    <button
+                        class="bg-white text-left rounded w-[48%] md:w-[100%] lg:w-[48%] md:flex md:flex-row lg:flex lg:flex-row md:h-48 relative hover:shadow-lg border-green-100 border hover:border-white">
+                        <img src="/img/houses (4).jpg"
+                            class="rounded md:w-[50%] md:object-cover md:h-[100%] lg:h-[100%]"></img>
                         <div class="flex flex-col px-2">
                             <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
                             <span class="location text-sm py-1">3 bedroom in school junction for sale</span>
                             <span class="region text-xs py-1 text-gray-500">Greater Accra, Tema Metropolitan</span>
                             <span id="furbished-state"></span>
-                            <span class="size text-xs my-1 font-bold bg-gray-100 rounded-full w-fit px-3 py-2">100 sqm</span>
+                            <span class="size text-xs my-1 font-bold bg-gray-100 rounded-full w-fit px-3 py-2">100
+                                sqm</span>
                         </div>
                     </button>
 
-                    <button class="bg-white text-left rounded w-[48%] md:w-[100%] lg:w-[48%] md:flex md:flex-row lg:flex lg:flex-row md:h-48 relative hover:shadow-lg border-green-100 border hover:border-white">
-                        <img src="/img/houses (5).jpg" class="rounded md:w-[50%] md:object-cover md:h-[100%] lg:h-[100%]"></img>
+                    <button
+                        class="bg-white text-left rounded w-[48%] md:w-[100%] lg:w-[48%] md:flex md:flex-row lg:flex lg:flex-row md:h-48 relative hover:shadow-lg border-green-100 border hover:border-white">
+                        <img src="/img/houses (5).jpg"
+                            class="rounded md:w-[50%] md:object-cover md:h-[100%] lg:h-[100%]"></img>
                         <div class="flex flex-col px-2">
                             <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
                             <span class="location text-sm py-1">3 bedroom in school junction for sale</span>
                             <span class="region text-xs py-1 text-gray-500">Greater Accra, Tema Metropolitan</span>
                             <span class="furbished-state text-xs my-1 font-bold">Unfurbished</span>
-                            <span class="size text-xs my-1 font-bold bg-gray-100 rounded-full w-fit px-3 py-2">100 sqm</span>
+                            <span class="size text-xs my-1 font-bold bg-gray-100 rounded-full w-fit px-3 py-2">100
+                                sqm</span>
                         </div>
                     </button>
 
-                    <button class="bg-white text-left rounded w-[48%] md:w-[100%] lg:w-[48%] md:flex md:flex-row lg:flex lg:flex-row md:h-48 relative hover:shadow-lg border-green-100 border hover:border-white">
-                        <img src="/img/houses (6).jpg" class="rounded md:w-[50%] md:object-cover md:h-[100%] lg:h-[100%]"></img>
+                    <button
+                        class="bg-white text-left rounded w-[48%] md:w-[100%] lg:w-[48%] md:flex md:flex-row lg:flex lg:flex-row md:h-48 relative hover:shadow-lg border-green-100 border hover:border-white">
+                        <img src="/img/houses (6).jpg"
+                            class="rounded md:w-[50%] md:object-cover md:h-[100%] lg:h-[100%]"></img>
                         <div class="flex flex-col px-2">
                             <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
                             <span class="location text-sm py-1">3 bedroom in school junction for sale</span>
                             <span class="region text-xs py-1 text-gray-500">Greater Accra, Tema Metropolitan</span>
                             <span class="furbished-state text-xs my-1 font-bold">Semi-furbished</span>
-                            <span class="size text-xs my-1 font-bold bg-gray-100 rounded-full w-fit px-3 py-2">100 sqm</span>
+                            <span class="size text-xs my-1 font-bold bg-gray-100 rounded-full w-fit px-3 py-2">100
+                                sqm</span>
                         </div>
                     </button>
 
@@ -184,17 +229,29 @@
         <!-- The part showing the total number of results and pages the user can view -->
         <section class="h-24 w-screen bg-white flex flex-col justify-evenly items-center lg:bg-gray-100">
             <div class="flex justify-center items-center my-2">
-                <button type="button" class="flex justify-center items-center bg-teal-300 text-white text-base rounded-full h-9 w-9 mx-0.5"> <span><</span> </button>
-                <button type="button" class=" flex justify-center  items-center text-green-400 text-base rounded-full h-9 w-9">1</button>
-                <button type="button" class=" flex justify-center items-center  text-green-400 text-base rounded-full h-9 w-9">2</button>
-                <button type="button" class=" flex justify-center items-center  text-green-400 text-base rounded-full h-9 w-9">3</button>
-                <button type="button" class=".hidden justify-center items-center  text-green-400 text-base rounded-full h-9 w-9">4</button>
-                <button type="button" class=".hidden justify-center items-center  text-green-400 text-base rounded-full h-9 w-9">5</button>
+                <button type="button"
+                    class="flex justify-center items-center bg-teal-300 text-white text-base rounded-full h-9 w-9 mx-0.5">
+                    <span>
+                        << /span> </button>
+                <button type="button"
+                    class=" flex justify-center  items-center text-green-400 text-base rounded-full h-9 w-9">1</button>
+                <button type="button"
+                    class=" flex justify-center items-center  text-green-400 text-base rounded-full h-9 w-9">2</button>
+                <button type="button"
+                    class=" flex justify-center items-center  text-green-400 text-base rounded-full h-9 w-9">3</button>
+                <button type="button"
+                    class=".hidden justify-center items-center  text-green-400 text-base rounded-full h-9 w-9">4</button>
+                <button type="button"
+                    class=".hidden justify-center items-center  text-green-400 text-base rounded-full h-9 w-9">5</button>
                 <p class=" flex justify-center items-center  text-green-400 text-lg rounded-full h-9 w-9 ">. . .</p>
-                <button type="button" class=" flex justify-center items-center  text-green-400 text-base rounded-full h-9 w-9 mx-1 ">2673</button>
-                <button type="button" class="flex justify-center items-center bg-teal-300 text-white text-base rounded-full h-9 w-9 mx-1"> <span>></span> </button>
+                <button type="button"
+                    class=" flex justify-center items-center  text-green-400 text-base rounded-full h-9 w-9 mx-1 ">2673</button>
+                <button type="button"
+                    class="flex justify-center items-center bg-teal-300 text-white text-base rounded-full h-9 w-9 mx-1">
+                    <span>></span> </button>
             </div>
-            <div class="flex justify-center items-center"><span class="text-base text-gray-500">1 - 12 of 47167 results</span></div>
+            <div class="flex justify-center items-center"><span class="text-base text-gray-500">1 - 12 of 47167
+                    results</span></div>
         </section>
 
         <!-- Copy rights and other stuff -->
@@ -205,4 +262,5 @@
     </footer>
     <script src="index.js"></script>
 </body>
+
 </html>
