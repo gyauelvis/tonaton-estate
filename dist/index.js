@@ -1,10 +1,7 @@
 let getRecommendedBtn = document.getElementById("filter");
 let filterWindow = document.getElementById("filterWindow");
 let windowStatus = false;
-let getFilterWindowWidth;
-let getFilterWindowHeight;
-
-console.log(getRecommendedBtn);
+//Getting the filter window to pop up once the recommend button is clicked
 let getFilterWindow = () => {
   if (windowStatus === false) {
     filterWindow.style.display = "flex";
@@ -17,8 +14,8 @@ let getFilterWindow = () => {
     windowStatus = false;
   }
 };
-
 getRecommendedBtn.addEventListener("click", getFilterWindow);
+
 // window.addEventListener("click", (e) => {
 //   filterWindow.style.display = "none";
 // });

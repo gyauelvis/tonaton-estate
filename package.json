@@ -10,5 +10,13 @@
   "dependencies": {
     "tailwindcss": "^3.2.4"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyauelvis/tonaton-estate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gyauelvis/tonaton-estate/issues"
+  },
+  "homepage": "https://github.com/gyauelvis/tonaton-estate#readme",
   "description": ""
 }
