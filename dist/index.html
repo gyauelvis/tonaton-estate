@@ -64,6 +64,7 @@
                     <span class="px-2 text-base">Location</span>
                     <span class="px-4 text-xl"><img class="w-5 h-5" src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/></span>
                 </a>
+                 
                 <div class="bg-white rounded-lg w-[19rem] px-2 py-2 border my-1 ">
 
                     <a id="price" href="#" class="flex flex-row justify-between items-center py-1">
@@ -87,7 +88,7 @@
 
                         </div>
                         <div class="cursor-pointer py-0.5 text-gray-700 flex flex-row justify-start items-center">
-                            <input type="radio" name="l670" id="l670" class=""><label class="px-3 radio" for="l670">Under 670 • 2 907
+                            <input type="radio" name="l670" id="l670" class="w-4 h-4 "><label class="px-3 radio" for="l670">Under 670 • 2 907
                                 ads</label>
                         </div>
                         <div class="cursor-pointer py-0.5 text-gray-700 flex flex-row justify-start items-center">
@@ -114,6 +115,15 @@
                     </div>
                 </div>
             </section>
+
+            <a href="#" id="overlay" class="absolute hidden left-0 z-20 opacity-80 bg-gray-900 top-0 w-screen h-screen"></a>
+
+            <section id="regions" class="hidden items-center justify-center absolute top-[7%] z-50 w-[90vw] lg:w-[60vw] flex-col min-h-[90vh] my-10 py-6 rounded-t-3xl bg-white">
+
+                <input type="text" id="locationSearch" class="rounded-full border border-blue-500 placeholder:text-sm w-1/2 px-4 py-3 focus:border-2 focus:outline-none focus:border-blue-700" placeholder="Find country,region,state,city">
+
+            </section>
+            
 
             <section class="md:my-12 lg:my-12">
                 <!-- Section of the front page that shows "All Ghana, Price and All filter" -->
@@ -356,7 +366,9 @@
             <div class=""><span class="text-xs font-bold">@ 2023 hhtps://www.tonaton.com</span></div>
         </section>
     </footer>
+
     <script src="index.js"></script>
+    <script src="location.js"></script>
 </body>
 
 </html>

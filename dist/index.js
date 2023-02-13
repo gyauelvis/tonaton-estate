@@ -39,22 +39,22 @@ let priceFxn = (e) => {
 };
 getpriceBtn.addEventListener("click", priceFxn);
 
-//Showing the previous and forward btn when the various property imgs are hovered
+//Getting the forward and previous icons to pop up once the image is hovered
 let getProperties = document.querySelectorAll("#properties");
-
 getProperties.forEach((prop) => {
   prop.addEventListener("mouseover", (e) => {
-    
+    prop.children[1].classList.replace("hidden", "block");
+    prop.children[2].classList.replace("hidden", "block");
+    let getPropForwardIcons = document.querySelectorAll("#propForw");
+    getPropForwardIcons.forEach((icon) => {
+      icon.classList.add("transition", "ease-in-out", "delay-300");
+    });
   });
 });
-
-// let showIconFxn = (e) => {
-//   let getPropForwardIcons = document.querySelectorAll("#propForw");
-//   getPropForwardIcons.forEach((icon) => {
-//     icon.classList.replace("hidden", "block");
-//   });
-//   let getPropPrevIcons = document.querySelectorAll("#propPrev");
-//   getPropPrevIcons.forEach((icon) => {
-//     icon.classList.replace("hidden", "block");
-//   });
-// };
+//Getting the forward and previous icons to go off once the image is not hovered
+getProperties.forEach((prop) => {
+  prop.addEventListener("mouseout", (e) => {
+    prop.children[1].classList.replace("block", "hidden");
+    prop.children[2].classList.replace("block", "hidden");
+  });
+});
