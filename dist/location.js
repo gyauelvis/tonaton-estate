@@ -78,11 +78,12 @@ const getRegions = (regionsInGhana) => {
       "regionElements",
       "flex",
       "flex-col",
-      "bg-blue-50",
-      "my-2",
-      "py-3",
+      "bg-white",
+      "border-[0.01rem]",
+      "w-80",
+      "h-10",
       "w-11/12",
-      "text-lg",
+      "text-base",
       "text-gray-700",
       "px-4"
     );
@@ -95,11 +96,13 @@ getRegions(regionsInGhana);
 //Getting the location btn
 let getLocBtn = document.querySelector("#location");
 let getOverlay = document.querySelector("#overlay");
-let regStatus;
+let regStatus = false;
 
 //Getting the dark overlay to cover up the page when the location button is clicked
-
+//Getting the window to popUp too
 getLocBtn.addEventListener("click", (e) => {
+  e.preventDefault;
+  document.querySelector("body").classList.add("fixed");
   regionSec.classList.replace("hidden", "flex");
   getOverlay.classList.replace("hidden", "block");
 });
@@ -107,8 +110,9 @@ getLocBtn.addEventListener("click", (e) => {
 // After the window pops up, whenever the overlay is clicked, the window show close
 getOverlay.addEventListener("click", (e) => {
   e.preventDefault;
-  getOverlay.style.display = "none";
-  regionSec.style.display = "none";
+  document.querySelector("body").classList.remove("fixed");
+  getOverlay.classList.replace("block", "hidden");
+  regionSec.classList.replace("flex", "hidden");
 });
 
 let getLocSearch = document.querySelector("#locationSearch");
