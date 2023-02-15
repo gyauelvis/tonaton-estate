@@ -79,12 +79,13 @@ const getRegions = (regionsInGhana) => {
       "flex",
       "flex-col",
       "bg-white",
+      "justify-center",
       "border-[0.01rem]",
       "w-80",
       "h-10",
       "w-11/12",
       "text-base",
-      "text-gray-700",
+      "text-gray-900",
       "px-4"
     );
     buttonElement.textContent = `${region.regionName} - ${region.capital}`;
