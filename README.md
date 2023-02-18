@@ -1,7 +1,7 @@
-<p align="center">
+<!-- <p align="center">
   <a href="" rel="noopener">
  <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
-</p>
+</p> -->
 
 <h3 align="center">tonaton-estate</h3>
 
@@ -16,7 +16,9 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> A clone of the popular Ghanaian Ecommerce web-app 
+  <a href="https://tonaton.com/c_real-estate">Tonaton Real Estate</a>, 
+  the tonaton web-app made with HTML, CSS and JavaScript
     <br> 
 </p>
 
@@ -96,10 +98,9 @@ Add additional notes about how to deploy this on a live system.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [HTML](https://www.mongodb.com/) - Markup
+- [JavaScript](https://expressjs.com/) - Functionalities
+- [Tailwindcss](https://vuejs.org/) - Stylesheet
 
 ## ✍️ Authors <a name = "authors"></a>
 
