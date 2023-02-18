@@ -58,3 +58,6 @@ getProperties.forEach((prop) => {
     prop.children[2].classList.replace("block", "hidden");
   });
 });
+
+
+

@@ -118,6 +118,39 @@ getOverlay.addEventListener("click", (e) => {
   regionSec.classList.add("h-0");
 });
 
+//Making searches using the search bar that pops up with the window when the location button is clicked
+
+let searchBar = document.getElementById("locSearchBar");
+searchBar.addEventListener("input", (e) => {
+  let inputText = e.target.value.toLowerCase();
+  let inputLenght = e.target.value.length;
+
+  //Getting the available regions
+  let locations = document.querySelectorAll(".location");
+
+  //The popular test beside the first 3 regions
+  let popular = document.querySelector("#popular");
+  let firstLetters = document.querySelectorAll(".first-letter");
+
+  locations.forEach((location) => {
+    // if (inputLenght >= 3) {
+    // }
+
+    if (location.textContent.toLowerCase().includes(inputText)) {
+      //Check if location is visivle or not
+      if (location.classList.contains("hidden")) {
+        location.classList.replace("hidden", "flex");
+      }
+      popular.classList.replace("hidden", "flex");
+    } else if (inputLenght >= 3) {
+      if (location.classList.contains("flex")) {
+        popular.classList.replace("flex", "hidden");
+        location.classList.replace("flex", "hidden");
+      }
+    }
+  });
+});
+
 // let getLocSearch = document.querySelector("#locationSearch");
 // //What happens where the user begins to search for a particular location?
 // getLocSearch.addEventListener("input", (e) => {

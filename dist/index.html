@@ -133,7 +133,7 @@
         
                         <input placeholder="Find country,region,state..." type="search"
                         class="bg-white border rounded-full h-9 w-[95vw] py-6 px-10 focus:outline-none md:w-[20vw]  placeholder:text-sm lg:py-4"
-                        name="search" id="search">
+                        name="search" id="locSearchBar">
                     </div>
                 </div>
         
@@ -141,27 +141,27 @@
         
                     <div class="flex flex-col">
         
-                        <div class="flex flex-row items-end mt-5 p-0">
+                        <div id="popular" class="flex flex-row items-end mt-5 p-0">
                             <div class="flex w-[7.7rem] mx-0.5 -my-2 justify-start bg-green-100 text-sm rotate-90 -translate-x-[3.32rem] -translate-y-[3.55rem]">
                                 <span class="text-green-700 pr-10 pl-5 font-semibold">Popular</span>
                             </div>
         
                             <div class="flex flex-col justify-start items-start p-0 m-0 -translate-x-[6.7rem]">
-                                <button class="w-72 border-b flex hover:bg-green-50 flex-row justify-between items-center px-2  h-10 bg-white">
+                                <button class="location w-72 border-b flex hover:bg-green-50 flex-row justify-between items-center px-2  h-10 bg-white">
                                     <span class="text-gray-900 hover:text-green-900">
                                         Greater Accra
                                     </span>
                                     <img class="w-2 -rotate-90 h-2 mx-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyElEQVR4nO2UPQ4BYRBAn4RKVBKRaBSuoNAKDQVOsNfgFpxhK46gcYJVuIBkEwoRUYgKK5Itvsjy/exItvCSad8rZjLwJyuMgBCIhCYEhmpgLyiP4tmpgeAHgUANtIGHcKD/vgdfUO4nLboMHATkR6Dy6Zo8gYCnO9llCvkKyOkCdeDiIL8CDQyZOATGWJAH1hbyDVDAkiZwM5DfgRaOzAwCU1JQBLaap1YiJb0vgQFCLBLkcwSpAidFfgZqCNON9/GajrQ8uzwBLqDtb77UAnMAAAAASUVORK5CYII=">
                                 </button>
         
-                                <button class="w-72 border-b flex hover:bg-green-50 flex-row justify-between items-center px-2  h-10 bg-white">
+                                <button class="location w-72 border-b flex hover:bg-green-50 flex-row justify-between items-center px-2  h-10 bg-white">
                                     <span class="text-gray-900 hover:text-green-900">
                                         Central Region
                                     </span>
                                     <img class="w-2 -rotate-90 h-2 mx-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyElEQVR4nO2UPQ4BYRBAn4RKVBKRaBSuoNAKDQVOsNfgFpxhK46gcYJVuIBkEwoRUYgKK5Itvsjy/exItvCSad8rZjLwJyuMgBCIhCYEhmpgLyiP4tmpgeAHgUANtIGHcKD/vgdfUO4nLboMHATkR6Dy6Zo8gYCnO9llCvkKyOkCdeDiIL8CDQyZOATGWJAH1hbyDVDAkiZwM5DfgRaOzAwCU1JQBLaap1YiJb0vgQFCLBLkcwSpAidFfgZqCNON9/GajrQ8uzwBLqDtb77UAnMAAAAASUVORK5CYII=">
                                 </button>
         
-                                <button class="w-72 border-b flex hover:bg-green-50 flex-row justify-between items-center px-2  h-10 bg-white">
+                                <button class="location w-72 border-b flex hover:bg-green-50 flex-row justify-between items-center px-2  h-10 bg-white">
                                     <span class="text-gray-900 hover:text-green-900">
                                         Ashanti
                                     </span>
@@ -174,20 +174,20 @@
                         <div>
                             
                             <div class="flex flex-row">
-                                <span class="flex  flex-col justify-center text-green-600 font-bold bg-gray-100 px-1 w-[1.3rem]">
+                                <span class="first-letter flex  flex-col justify-center text-green-600 font-bold bg-gray-100 px-1 w-[1.3rem]">
                                     B
                                 </span>
-                                <button class="w-72 border-b flex hover:bg-green-50 flex-row justify-between items-center px-2  h-10 bg-white">
+                                <button class="location w-72 border-b flex hover:bg-green-50 flex-row justify-between items-center px-2  h-10 bg-white">
                                     <span>Brong Ahafo</span>
                                     <img class="w-2 -rotate-90 h-2 mx-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyElEQVR4nO2UPQ4BYRBAn4RKVBKRaBSuoNAKDQVOsNfgFpxhK46gcYJVuIBkEwoRUYgKK5Itvsjy/exItvCSad8rZjLwJyuMgBCIhCYEhmpgLyiP4tmpgeAHgUANtIGHcKD/vgdfUO4nLboMHATkR6Dy6Zo8gYCnO9llCvkKyOkCdeDiIL8CDQyZOATGWJAH1hbyDVDAkiZwM5DfgRaOzAwCU1JQBLaap1YiJb0vgQFCLBLkcwSpAidFfgZqCNON9/GajrQ8uzwBLqDtb77UAnMAAAAASUVORK5CYII=">
                                 </button>
                             </div>
         
                             <div class="flex flex-row">
-                                <span class="flex  flex-col justify-center text-green-600 font-bold bg-gray-100 px-1 w-[1.3rem]">
+                                <span class="first-letter flex  flex-col justify-center text-green-600 font-bold bg-gray-100 px-1 w-[1.3rem]">
                                     E
                                 </span>
-                                <button class="w-72 border-b flex hover:bg-green-50 flex-row justify-between items-center px-2  h-10 bg-white">
+                                <button class="location w-72 border-b flex hover:bg-green-50 flex-row justify-between items-center px-2  h-10 bg-white">
                                     <span>Eastern Region</span> 
                                     <img class="w-2 -rotate-90 h-2 mx-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyElEQVR4nO2UPQ4BYRBAn4RKVBKRaBSuoNAKDQVOsNfgFpxhK46gcYJVuIBkEwoRUYgKK5Itvsjy/exItvCSad8rZjLwJyuMgBCIhCYEhmpgLyiP4tmpgeAHgUANtIGHcKD/vgdfUO4nLboMHATkR6Dy6Zo8gYCnO9llCvkKyOkCdeDiIL8CDQyZOATGWJAH1hbyDVDAkiZwM5DfgRaOzAwCU1JQBLaap1YiJb0vgQFCLBLkcwSpAidFfgZqCNON9/GajrQ8uzwBLqDtb77UAnMAAAAASUVORK5CYII=">
                                 </button>
@@ -197,17 +197,17 @@
                                 <span class="flex  flex-col  justify-center text-green-600 font-bold bg-gray-100 px-1 w-[1.3rem]">
                                     N
                                 </span>
-                                <button class="w-72 border-b flex hover:bg-green-50 flex-row justify-between items-center px-2  h-10 bg-white">
+                                <button class="location w-72 border-b flex hover:bg-green-50 flex-row justify-between items-center px-2  h-10 bg-white">
                                     <span>Northern Region</span> 
                                     <img class="w-2 -rotate-90 h-2 mx-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyElEQVR4nO2UPQ4BYRBAn4RKVBKRaBSuoNAKDQVOsNfgFpxhK46gcYJVuIBkEwoRUYgKK5Itvsjy/exItvCSad8rZjLwJyuMgBCIhCYEhmpgLyiP4tmpgeAHgUANtIGHcKD/vgdfUO4nLboMHATkR6Dy6Zo8gYCnO9llCvkKyOkCdeDiIL8CDQyZOATGWJAH1hbyDVDAkiZwM5DfgRaOzAwCU1JQBLaap1YiJb0vgQFCLBLkcwSpAidFfgZqCNON9/GajrQ8uzwBLqDtb77UAnMAAAAASUVORK5CYII=">
                                 </button>
                             </div>
         
                             <div class="flex flex-row">
-                                <span class="flex  flex-col justify-center text-green-600 font-bold bg-gray-100 px-1 w-[1.3rem]">
+                                <span class="first-letter flex  flex-col justify-center text-green-600 font-bold bg-gray-100 px-1 w-[1.3rem]">
                                     U
                                 </span>
-                                <button class="w-72 border-b flex hover:bg-green-50 flex-row justify-between items-center px-2  h-10 bg-white">
+                                <button class="location w-72 border-b flex hover:bg-green-50 flex-row justify-between items-center px-2  h-10 bg-white">
                                     <span>Upper West</span> 
                                     <img class="w-2 -rotate-90 h-2 mx-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyElEQVR4nO2UPQ4BYRBAn4RKVBKRaBSuoNAKDQVOsNfgFpxhK46gcYJVuIBkEwoRUYgKK5Itvsjy/exItvCSad8rZjLwJyuMgBCIhCYEhmpgLyiP4tmpgeAHgUANtIGHcKD/vgdfUO4nLboMHATkR6Dy6Zo8gYCnO9llCvkKyOkCdeDiIL8CDQyZOATGWJAH1hbyDVDAkiZwM5DfgRaOzAwCU1JQBLaap1YiJb0vgQFCLBLkcwSpAidFfgZqCNON9/GajrQ8uzwBLqDtb77UAnMAAAAASUVORK5CYII=">
                                 </button>
@@ -219,28 +219,28 @@
                     <div>
                         <div class="mt-5 -translate-x-[6.7rem]">
                             <div class="flex flex-row">
-                                <span class="flex  flex-col justify-center text-green-600 font-bold bg-gray-100 px-1 w-[1.3rem]">
+                                <span class="first-letter flex  flex-col justify-center text-green-600 font-bold bg-gray-100 px-1 w-[1.3rem]">
                                     U
                                 </span>
-                                <button class="w-72 border-b flex hover:bg-green-50 flex-row justify-between items-center px-2  h-10 bg-white">
+                                <button class="location w-72 border-b flex hover:bg-green-50 flex-row justify-between items-center px-2  h-10 bg-white">
                                     <span>Upper East Region</span> 
                                     <img class="w-2 -rotate-90 h-2 mx-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyElEQVR4nO2UPQ4BYRBAn4RKVBKRaBSuoNAKDQVOsNfgFpxhK46gcYJVuIBkEwoRUYgKK5Itvsjy/exItvCSad8rZjLwJyuMgBCIhCYEhmpgLyiP4tmpgeAHgUANtIGHcKD/vgdfUO4nLboMHATkR6Dy6Zo8gYCnO9llCvkKyOkCdeDiIL8CDQyZOATGWJAH1hbyDVDAkiZwM5DfgRaOzAwCU1JQBLaap1YiJb0vgQFCLBLkcwSpAidFfgZqCNON9/GajrQ8uzwBLqDtb77UAnMAAAAASUVORK5CYII=">
                                 </button>
                             </div>
                             <div class="flex flex-row">
-                                <span class="flex  flex-col justify-center text-green-600 font-bold bg-gray-100 px-1 w-[1.3rem]">
+                                <span class="first-letter flex  flex-col justify-center text-green-600 font-bold bg-gray-100 px-1 w-[1.3rem]">
                                     V
                                 </span>
-                                <button class="w-72 border-b flex hover:bg-green-50 flex-row justify-between items-center px-2  h-10 bg-white">
+                                <button class="location w-72 border-b flex hover:bg-green-50 flex-row justify-between items-center px-2  h-10 bg-white">
                                     <span>Volta Region</span> 
                                     <img class="w-2 -rotate-90 h-2 mx-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyElEQVR4nO2UPQ4BYRBAn4RKVBKRaBSuoNAKDQVOsNfgFpxhK46gcYJVuIBkEwoRUYgKK5Itvsjy/exItvCSad8rZjLwJyuMgBCIhCYEhmpgLyiP4tmpgeAHgUANtIGHcKD/vgdfUO4nLboMHATkR6Dy6Zo8gYCnO9llCvkKyOkCdeDiIL8CDQyZOATGWJAH1hbyDVDAkiZwM5DfgRaOzAwCU1JQBLaap1YiJb0vgQFCLBLkcwSpAidFfgZqCNON9/GajrQ8uzwBLqDtb77UAnMAAAAASUVORK5CYII=">
                                 </button>
                             </div>
                             <div class="flex flex-row">
-                                <span class="flex  flex-col justify-center text-green-600 font-bold bg-gray-100 px-1 w-[1.3rem]">
+                                <span class="first-letter flex  flex-col justify-center text-green-600 font-bold bg-gray-100 px-1 w-[1.3rem]">
                                     W
                                 </span>
-                                <button class="w-72 border-b flex hover:bg-green-50 flex-row justify-between items-center px-2  h-10 bg-white">
+                                <button class="location w-72 border-b flex hover:bg-green-50 flex-row justify-between items-center px-2  h-10 bg-white">
                                     <span>Western Region</span> 
                                     <img class="w-2 -rotate-90 h-2 mx-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyElEQVR4nO2UPQ4BYRBAn4RKVBKRaBSuoNAKDQVOsNfgFpxhK46gcYJVuIBkEwoRUYgKK5Itvsjy/exItvCSad8rZjLwJyuMgBCIhCYEhmpgLyiP4tmpgeAHgUANtIGHcKD/vgdfUO4nLboMHATkR6Dy6Zo8gYCnO9llCvkKyOkCdeDiIL8CDQyZOATGWJAH1hbyDVDAkiZwM5DfgRaOzAwCU1JQBLaap1YiJb0vgQFCLBLkcwSpAidFfgZqCNON9/GajrQ8uzwBLqDtb77UAnMAAAAASUVORK5CYII=">
                                 </button>
