@@ -130,24 +130,50 @@ searchBar.addEventListener("input", (e) => {
 
   //The popular test beside the first 3 regions
   let popular = document.querySelector("#popular");
+  let popularRegions = document.querySelector("#popular-regions");
+  let regionDiv = document.querySelector("#regionDiv");
+  let regionSec3 = document.querySelector("#region-Sec3");
   let firstLetters = document.querySelectorAll(".first-letter");
 
   locations.forEach((location) => {
-    // if (inputLenght >= 3) {
-    // }
-
-    if (location.textContent.toLowerCase().includes(inputText)) {
-      //Check if location is visivle or not
-      if (location.classList.contains("hidden")) {
+    if (inputLenght >= 3) {
+      popular.classList.replace("flex", "hidden");
+      popularRegions.classList.replace("-translate-x-[6.7rem]", "translate-0");
+      regionDiv.classList.replace("flex-row", "flex-col");
+      regionSec3.classList.replace("-translate-x-[6.7rem]", "translate-0");
+      regionSec3.classList.replace("mt-5", "mt-0");
+      firstLetters.forEach((letter) =>
+        letter.classList.replace("flex", "hidden")
+      );
+      if (location.textContent.toLowerCase().includes(inputText)) {
         location.classList.replace("hidden", "flex");
-      }
-      popular.classList.replace("hidden", "flex");
-    } else if (inputLenght >= 3) {
-      if (location.classList.contains("flex")) {
-        popular.classList.replace("flex", "hidden");
+      } else {
         location.classList.replace("flex", "hidden");
       }
+    } else {
+      popular.classList.replace("hidden", "flex");
+      popularRegions.classList.replace("translate-0", "-translate-x-[6.7rem]");
+      regionDiv.classList.replace("flex-col", "flex-row");
+      regionSec3.classList.replace("translate-0", "-translate-x-[6.7rem]");
+      regionSec3.classList.replace("mt-0", "mt-5");
+      firstLetters.forEach((letter) =>
+        letter.classList.replace("hidden", "flex")
+      );
+      location.classList.replace("hidden", "flex");
     }
+
+    // if (location.textContent.toLowerCase().includes(inputText)) {
+    //   //Check if location is visivle or not
+    //   if (location.classList.contains("hidden")) {
+    //     location.classList.replace("hidden", "flex");
+    //   }
+    //   popular.classList.replace("hidden", "flex");
+    // } else if (inputLenght >= 3) {
+    //   if (location.classList.contains("flex")) {
+    //     popular.classList.replace("flex", "hidden");
+    //     location.classList.replace("flex", "hidden");
+    //   }
+    // }
   });
 });
 
