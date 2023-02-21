@@ -105,7 +105,9 @@ getLocBtn.addEventListener("click", (e) => {
   e.preventDefault;
   document.querySelector("body").classList.add("fixed");
   regionSec.classList.replace("invisible", "visible");
-  regionSec.classList.remove("h-0");
+  regionSec.classList.replace("opacity-0", "opacity-100");
+  regionSec.classList.replace("min-h-0", "min-h-[90vh]");
+  regionSec.classList.replace("translate-y-full", "translate-y-0");
   getOverlay.classList.replace("hidden", "block");
 });
 
@@ -115,7 +117,9 @@ getOverlay.addEventListener("click", (e) => {
   document.querySelector("body").classList.remove("fixed");
   getOverlay.classList.replace("block", "hidden");
   regionSec.classList.replace("visible", "invisible");
-  regionSec.classList.add("h-0");
+  regionSec.classList.replace("opacity-100", "opacity-0");
+  regionSec.classList.replace("translate-y-0", "translate-y-full");
+  regionSec.classList.replace("min-h-[90vh]", "min-h-0");
 });
 
 //Making searches using the search bar that pops up with the window when the location button is clicked
@@ -140,11 +144,13 @@ searchBar.addEventListener("input", (e) => {
       popular.classList.replace("flex", "hidden");
       popularRegions.classList.replace("-translate-x-[6.7rem]", "translate-0");
       regionDiv.classList.replace("flex-row", "flex-col");
+      regionDiv.classList.add("px-5");
       regionSec3.classList.replace("-translate-x-[6.7rem]", "translate-0");
       regionSec3.classList.replace("mt-5", "mt-0");
       firstLetters.forEach((letter) =>
         letter.classList.replace("flex", "hidden")
       );
+
       if (location.textContent.toLowerCase().includes(inputText)) {
         location.classList.replace("hidden", "flex");
       } else {
@@ -160,96 +166,7 @@ searchBar.addEventListener("input", (e) => {
         letter.classList.replace("hidden", "flex")
       );
       location.classList.replace("hidden", "flex");
+      regionDiv.classList.remove("px-5");
     }
-
-    // if (location.textContent.toLowerCase().includes(inputText)) {
-    //   //Check if location is visivle or not
-    //   if (location.classList.contains("hidden")) {
-    //     location.classList.replace("hidden", "flex");
-    //   }
-    //   popular.classList.replace("hidden", "flex");
-    // } else if (inputLenght >= 3) {
-    //   if (location.classList.contains("flex")) {
-    //     popular.classList.replace("flex", "hidden");
-    //     location.classList.replace("flex", "hidden");
-    //   }
-    // }
   });
 });
-
-// let getLocSearch = document.querySelector("#locationSearch");
-// //What happens where the user begins to search for a particular location?
-// getLocSearch.addEventListener("input", (e) => {
-//   //classes to be added to the searches that appear
-//   let popUpClasses = [
-//     "regionElements",
-//     "flex",
-//     "flex-col",
-//     "bg-blue-50",
-//     "my-2",
-//     "py-3",
-//     "w-11/12",
-//     "text-lg",
-//     "text-gray-700",
-//     "px-4",
-//   ];
-//   regionsInGhana.forEach((region) => {
-//     if (e.target.value != "" && e.target.value != " ") {
-//       // Get the regions that come up with the popUp when All Ghana is pressed
-//       let getRegionElements = document.querySelectorAll(".regionElements");
-//       //Check if any of the given values that is already on the screen do include the value the user has entered
-
-//       getRegionElements.forEach((element) => {
-//         if (
-//           element.textContent.toLowerCase().includes(e.target.value) ||
-//           element.textContent.toUpperCase().includes(e.target.value)
-//         ) {
-//         } else {
-//           element.remove();
-//         }
-//       });
-
-//       let town1AppendStat = false;
-//       let town2AppendStat = false;
-//       if (
-//         region.town1.toLowerCase().includes(e.target.value) ||
-//         region.town1.toUpperCase().includes(e.target.value)
-//       ) {
-//         document.querySelectorAll("button").forEach((btn) => {
-//           if (btn.textContent === region.town1) {
-//             town1AppendStat = true;
-//           }
-//         });
-//         //Creating a button based on the search of the user
-//         let town1sec = document.createElement("div");
-//         town1sec.id = "town1";
-//         regionSec.appendChild(town1sec);
-//         let btnElement;
-//         if (town1AppendStat === false) {
-//           btnElement = document.createElement("button");
-//           btnElement.textContent = region.town1;
-//           regionSec.appendChild(btnElement);
-//         }
-//       } else if (
-//         region.town2.toLowerCase().includes(e.target.value) ||
-//         region.town2.toUpperCase().includes(e.target.value)
-//       ) {
-//         document.querySelectorAll("button").forEach((btn) => {
-//           if (btn.textContent === region.town2) {
-//             town2AppendStat = true;
-//           }
-//         });
-//         //Creating a button based on the search of the user
-//         let town2sec = document.createElement("div");
-//         town2sec.id = "town1";
-//         regionSec.appendChild(town2sec);
-//         let btnElement;
-//         if (town2AppendStat === false) {
-//           btnElement = document.createElement("button");
-//           btnElement.textContent = region.town2;
-//           regionSec.appendChild(btnElement);
-//         }
-//       }
-//     }
-//   });
-// });

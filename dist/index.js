@@ -24,12 +24,18 @@ let priceFxn = (e) => {
   let getPriceMenu = document.getElementById("priceMenu");
   let getPriceIcon = document.getElementById("price-icon");
   if (slideStat === false) {
-    getPriceMenu.classList.add("h-0", "invisible");
+    getPriceMenu.classList.add("invisible");
+    getPriceMenu.classList.replace("opacity-100", "opacity-0");
+    getPriceMenu.classList.add("h-0");
+    getPriceMenu.classList.replace("translate-y-0", "-translate-y-10");
     getPriceIcon.classList.remove("-rotate-90");
     getPriceIcon.classList.add("rotate-90");
     slideStat = true;
   } else if (slideStat === true) {
-    getPriceMenu.classList.remove("h-0", "invisible");
+    getPriceMenu.classList.remove("invisible");
+    getPriceMenu.classList.replace("opacity-0", "opacity-100");
+    getPriceMenu.classList.remove("h-0");
+    getPriceMenu.classList.replace("-translate-y-10", "translate-y-0");
     getPriceIcon.classList.add("-rotate-90");
     getPriceIcon.classList.remove("rotate-90");
     console.log(slideStat);
@@ -58,6 +64,3 @@ getProperties.forEach((prop) => {
     prop.children[2].classList.replace("block", "hidden");
   });
 });
-
-
-
