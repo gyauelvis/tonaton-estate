@@ -4,12 +4,12 @@ let windowStatus = false;
 //Getting the filter window to pop up once the recommend button is clicked
 let getFilterWindow = () => {
   if (windowStatus === false) {
-    filterWindow.style.display = "flex";
+    filterWindow.classList.replace("hidden", "flex");
     windowStatus = true;
     console.log(windowStatus);
     console.log(filterWindow.getBoundingClientRect());
   } else if (windowStatus === true) {
-    filterWindow.style.display = "none";
+    filterWindow.classList.replace("flex", "hidden");
     console.log(getComputedStyle(filterWindow).display);
     windowStatus = false;
   }
@@ -49,8 +49,8 @@ getpriceBtn.addEventListener("click", priceFxn);
 let getProperties = document.querySelectorAll("#properties");
 getProperties.forEach((prop) => {
   prop.addEventListener("mouseover", (e) => {
-    prop.children[1].classList.replace("hidden", "block");
-    prop.children[2].classList.replace("hidden", "block");
+    prop.children[1].classList.replace("propPrev1", "propPrev2");
+    prop.children[2].classList.replace("propForw1", "propForw2");
     let getPropForwardIcons = document.querySelectorAll("#propForw");
     getPropForwardIcons.forEach((icon) => {
       icon.classList.add("transition", "ease-in-out", "delay-300");
@@ -60,7 +60,7 @@ getProperties.forEach((prop) => {
 //Getting the forward and previous icons to go off once the image is not hovered
 getProperties.forEach((prop) => {
   prop.addEventListener("mouseout", (e) => {
-    prop.children[1].classList.replace("block", "hidden");
-    prop.children[2].classList.replace("block", "hidden");
+    prop.children[1].classList.replace("propPrev2", "propPrev1");
+    prop.children[2].classList.replace("propForw2", "propForw1");
   });
 });
