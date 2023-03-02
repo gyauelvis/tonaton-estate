@@ -17,7 +17,7 @@ let getFilterWindow = () => {
 getRecommendedBtn.addEventListener("click", getFilterWindow);
 
 //Slide up when the price is clicked
-let getpriceBtn = document.querySelector("#price");
+let getpriceBtns = document.querySelectorAll(".price");
 let slideStat = false;
 let priceFxn = (e) => {
   e.preventDefault;
@@ -43,7 +43,9 @@ let priceFxn = (e) => {
   }
   console.log(getPriceMenu);
 };
-getpriceBtn.addEventListener("click", priceFxn);
+getpriceBtns.forEach((btn) => {
+  btn.addEventListener("click", priceFxn);
+});
 
 //Getting the forward and previous icons to pop up once the image is hovered
 let getProperties = document.querySelectorAll("#properties");
