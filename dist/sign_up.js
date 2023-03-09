@@ -37,5 +37,12 @@ getSubmitBtn.addEventListener("click", (e) => {
   }
 });
 
-const getLoginForms = document.querySelector("loginAccountForm");
-const getLoginFormsBtn = document.querySelector("")
+const getCreateAccForms = document.querySelector("#createAccountForm");
+const getLoginForms = document.querySelector("#loginAccountForm");
+const getLoginFormsBtn = document.querySelector("#login");
+getLoginFormsBtn.addEventListener("click", (e) => {
+  getLoginForms.classList.replace("hidden", "flex");
+  getLoginForms.classList.replace("translate-x-80", "translate-x-0");
+  getCreateAccForms.classList.replace("flex", "hidden");
+  
+});
