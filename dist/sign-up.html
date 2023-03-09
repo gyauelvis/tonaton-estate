@@ -8,31 +8,58 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body>
-    <form id="createAccountForm" class="flex flex-col justify-center items-center w-screen h-screen bg-green-50 relative">
-        <div class="flex flex-col justify-start items-start bg-white rounded-lg px-10 py-5 relative ">
+    <div class="flex flex-col justify-center items-center w-screen h-screen bg-green-50 relative">
+        <form id="createAccountForm" class="flex flex-col justify-start items-start bg-white rounded-lg px-10 py-5 w-80">
             <h2 class="text-2xl font-bold py-3 text-green-500">
-                Create Account
+                    Create Account
             </h2>
             <div>
-                <label for="name" id="nameLabel" class="text-gray-500">Name</label><br>
-                <input type="text" name="name" id="name"  class="border w-56 py-1 rounded my-2 border-gray-300 focus:outline-none px-2">
+                    <label for="name" id="nameLabel" class="text-gray-500">Name</label><br>
+                    <input type="text" name="name" id="name"  class="border w-60 py-1 rounded my-2 border-gray-300 focus:outline-none px-2" required>
             </div>
             <div>
-                <label for="email" id="emailLabel" class="text-gray-500">Email</label><br>
-                <input type="email" name="email" id="email"  class="border w-56 py-1 rounded my-2 border-gray-300 focus:outline-none px-2">
+                    <label for="email" id="emailLabel" class="text-gray-500">Email</label><br>
+                    <input type="email" name="email" id="email"  class="border w-60 py-1 rounded my-2 border-gray-300 focus:outline-none px-2" required>
             </div>
             <div>
-                <label for="password" id="passwordLabel" class="text-gray-500">Password</label><br>
-                <input type="password" name="password" id="password" class="border w-56 py-1 rounded my-2 border-gray-300 focus:outline-none px-2">
+                    <label for="password" id="passwordLabel" class="text-gray-500">Password</label><br>
+                    <input type="password" name="password" id="password" class="border w-60 py-1 rounded my-2 border-gray-300 focus:outline-none px-2" required>
+                    <div id="passwordHelp" class="w-64 text-sm py-1 text-red-900"></div>
             </div>
             <div>
-                <input type="button" value="Create Account" class="bg-green-500 w-56 text-white font-semibold py-1 rounded my-2" id="submit">
+                    <input type="submit" value="Create Account" class="bg-green-500 w-60 text-white font-semibold py-1 rounded my-2" id="submit">
             </div>
-            <div class="py-2">
-                <span class="text-sm">Already have an Account? </span><a href="#" class="text-green-900 underline">Login</a>
+             <div class="py-2">
+                    <span class="text-sm">Already have an Account? </span><a href="#" id="login" class="text-green-900 underline">Login</a>
             </div>
-        </div>
-    </form>
+        </form>
+
+        <form id="loginAccountForm" class="hidden flex-col justify-start items-start bg-white rounded-lg px-10 py-5 w-80 absolute translate-x-80 transition-transform">
+            <h2 class="text-2xl font-bold py-3 text-green-500">
+                    Create Account
+            </h2>
+            <div>
+                    <label for="name" id="nameLabel" class="text-gray-500">Name</label><br>
+                    <input type="text" name="name" id="name"  class="border w-60 py-1 rounded my-2 border-gray-300 focus:outline-none px-2" required>
+            </div>
+            <div>
+                    <label for="email" id="emailLabel" class="text-gray-500">Email</label><br>
+                    <input type="email" name="email" id="email"  class="border w-60 py-1 rounded my-2 border-gray-300 focus:outline-none px-2" required>
+            </div>
+            <div>
+                    <label for="password" id="passwordLabel" class="text-gray-500">Password</label><br>
+                    <input type="password" name="password" id="password" class="border w-60 py-1 rounded my-2 border-gray-300 focus:outline-none px-2" required>
+                    <div id="passwordHelp" class="w-64 text-sm py-1 text-red-900"></div>
+            </div>
+            <div>
+                    <input type="submit" value="Create Account" class="bg-green-500 w-60 text-white font-semibold py-1 rounded my-2" id="submit">
+            </div>
+             <div class="py-2">
+                    <span class="text-sm">Already have an Account? </span><a href="#" class="text-green-900 underline">Login</a>
+            </div>
+        </form>
+    </div>
+
 <script src="sign_up.js"></script>
 </body>
 </html>
