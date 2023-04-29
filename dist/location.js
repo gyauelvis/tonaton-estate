@@ -24,7 +24,7 @@ getLocBtn.forEach((btn) => {
 getOverlay.addEventListener("click", (e) => {
   e.preventDefault();
   document.querySelector("body").classList.remove("fixed");
-  getOverlay.classList.replace("block", "hidden");
+  getOverlay.classList.replace("md:block", "md:hidden");
   regionSec.classList.replace("visible", "invisible");
   regionSec.classList.replace("opacity-100", "opacity-0");
   regionSec.classList.replace("translate-y-0", "translate-y-full");
