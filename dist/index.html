@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="output.css">
 </head>
 
-<body>
+<body class="w-full overflow-x-hidden scroll-smooth">
     <!-- Making the search bar at the top -->
     <nav class="sticky left-0 top-0 z-10">
         <section
@@ -41,8 +41,116 @@
         </section>
     </nav>
 
+    <!-- Pop up that appears then the All filter button is clicked on smaller devices -->
+    <section id="allFilterWindow" class="fixed invisible md:hidden w-full h-0 top-0 left-0 z-50 bg-gray-100 transition-transform ease-in-out translate-y-full opacity-0">
+
+        <div class="flex items-center bg-green-400 h-20 px-10">
+
+            <a href="#" id="allFilterClose" class="text-xl text-white font-semibold">
+
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAApUlEQVR4nO2VSw7DIAxEuURQe8T0uMmiJ/BY+BKpkLKoKgoeN1E38QoJZh6fAVK6ii0As6pmVqequWpH5g8Am4isDERVc9VUbfXoASYRWfaBTzO7j8w/NaWUGyWwDoQ2ZyCImnsg+NW8B8FR5q2EiMj63o7E2bOS7ZCZjwDmiPD/twiNA41cRrd5+tJHQzxRRBTC5BwsJHKJwEBOf65P/3CuSo16AfOr8Ox1bsSHAAAAAElFTkSuQmCC">
+            </a>
+            <span class="text-2xl text-white font-semibold mx-auto">
+               Filter Results
+            </span>
+
+        </div>
+
+        <div class="flex flex-col justify-center items-center py-5">
+            
+            <a href="#" 
+                class="location bg-white w-10/12 flex font-bold flex-row items-center justify-between rounded-lg border my-1 h-14">
+                <span class="px-2 text-base">Location</span>
+                <span class="px-4 text-xl"><img class="w-5 h-5 rotate-90"
+                        src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png" alt=" " /></span>
+            </a>
+
+            <div class="bg-white rounded-lg w-10/12 px-2 py-2 border my-1 h-14">
+
+                <a href="#" class="priceBtn flex flex-row justify-between items-center py-1">
+                    <h2 class="font-bold text-base">Price, GH¢</h2>
+
+                    <span id="price-icon" class="px-4 text-xl rotate-90 transition ease-in-out">
+                        <img class="w-5 h-5"
+                            src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png" />
+                    </span>
+                </a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Pop up that appears then the Price button is clicked on smaller devices -->
+
+    <section id="priceWindow" class="fixed invisible md:hidden w-full h-0 top-0 left-0 z-50 bg-gray-100 transition-transform ease-in-out translate-y-full opacity-0">
+
+        <div class="flex items-center bg-green-400 h-20 px-10">
+
+            <a href="#" id="priceClose" class="text-xl text-white font-semibold">
+
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAApUlEQVR4nO2VSw7DIAxEuURQe8T0uMmiJ/BY+BKpkLKoKgoeN1E38QoJZh6fAVK6ii0As6pmVqequWpH5g8Am4isDERVc9VUbfXoASYRWfaBTzO7j8w/NaWUGyWwDoQ2ZyCImnsg+NW8B8FR5q2EiMj63o7E2bOS7ZCZjwDmiPD/twiNA41cRrd5+tJHQzxRRBTC5BwsJHKJwEBOf65P/3CuSo16AfOr8Ox1bsSHAAAAAElFTkSuQmCC">
+            </a>
+
+            <span class="text-2xl text-white font-semibold mx-auto">
+               Price, GH¢
+            </span>
+
+        </div>
+
+        <div id="priceMenu" class="flex flex-col px-5 py-1 text-sm translate-y-0 transition-all ease-in-out opacity-100">
+            <div class="cursor-pointer py-4 text-gray-700 flex flex-row gap-5 items-center ">
+
+                <input type="text" name="min" id="min" placeholder="min"
+                    class="border w-24 rounded h-12 p-2 focus:outline-none">
+
+                <span class="text-3xl font-thin text-gray-500">-</span>
+
+                <input type="text" name="max" id="max" placeholder="max"
+                    class="border w-24 rounded h-12 p-2 focus:outline-none">
+
+            </div>
+
+            <div class="cursor-pointer py-2 border-b text-gray-700 flex flex-row justify-start items-center">
+                <input type="radio" name="l670" id="l670" class="w-4 h-4 ">
+                <label class="px-3 radio text-lg" for="l670">
+                    Under 670 • 2 907ads
+                </label>
+            </div>
+            <div class="cursor-pointer py-2 border-b text-gray-700 flex flex-row justify-start items-center">
+                <input type="radio" name="l670" id="l670"><label class="px-3 text-lg" for="l670">670 - 4.7 K • 11
+                    630 ads</label>
+            </div>
+            <div class="cursor-pointer py-2 border-b text-gray-700 flex flex-row justify-start items-center">
+                <input type="radio" name="l670" id="l670"><label class="px-3 text-lg" for="l670">4.7 - 120 K • 19
+                    384 ads</label>
+            </div>
+            <div class="cursor-pointer py-2 border-b text-gray-700 flex flex-row justify-start items-center">
+                <input type="radio" name="l670" id="l670"><label class="px-3 text-lg" for="l670">120 K - 4.5 M • 12
+                    115 ads</label>
+            </div>
+            <div class="cursor-pointer py-2 border-b text-gray-700 flex flex-row justify-start items-center">
+                <input type="radio" name="l670" id="l670"><label class="px-3 text-lg" for="l670">More than 4.5 M • 2
+                    423 ads</label>
+            </div>
+
+            <div class="cursor-pointer py-5 flex flex-row justify-between items-center">
+
+                <button disabled="disabled" class="text-green-400 text-xl">Clear</button>
+
+                <a href="#" class="text-white text-xl bg-green-400 rounded-full py-1 px-10">
+                    Apply
+                </a>
+
+            </div>
+
+        </div>
+        
+    </section>
+
     <main class="md:px-5 lg:px-10 md:bg-gray-100">
         <section class="flex flex-row">
+
+            <!-- Side bar -->
 
             <section id="side-bar" class="hidden md:flex lg:flex flex-col mx-4">
                 <div class="my-4">
@@ -74,6 +182,7 @@
 
                     </div>
                 </div>
+                
                 <a href="#" 
                     class="location bg-white w-[19rem] flex font-bold flex-row items-center justify-between rounded-lg border my-1 h-14">
                     <span class="px-2 text-base">Location</span>
@@ -104,25 +213,25 @@
                                 class="border w-24 rounded h-12 p-2 focus:outline-none">
 
                         </div>
-                        <div class="cursor-pointer py-0.5 text-gray-700 flex flex-row justify-start items-center">
+                        <div class="cursor-pointer py-2 border text-gray-700 flex flex-row justify-start items-center">
                             <input type="radio" name="l670" id="l670" class="w-4 h-4 "><label class="px-3 radio"
-                                for="l670">Under 670 • 2 907
+                               text-lg  for="l670">Under 670 • 2 907
                                 ads</label>
                         </div>
-                        <div class="cursor-pointer py-0.5 text-gray-700 flex flex-row justify-start items-center">
-                            <input type="radio" name="l670" id="l670"><label class="px-3" for="l670">670 - 4.7 K • 11
+                        <div class="cursor-pointer py-2 border text-gray-700 flex flex-row justify-start items-center">
+                            <input type="radio" name="l670" id="l670"><label class="px-3 text-lg" for="l670">670 - 4.7 K • 11
                                 630 ads</label>
                         </div>
-                        <div class="cursor-pointer py-0.5 text-gray-700 flex flex-row justify-start items-center">
-                            <input type="radio" name="l670" id="l670"><label class="px-3" for="l670">4.7 - 120 K • 19
+                        <div class="cursor-pointer py-2 border text-gray-700 flex flex-row justify-start items-center">
+                            <input type="radio" name="l670" id="l670"><label class="px-3 text-lg" for="l670">4.7 - 120 K • 19
                                 384 ads</label>
                         </div>
-                        <div class="cursor-pointer py-0.5 text-gray-700 flex flex-row justify-start items-center">
-                            <input type="radio" name="l670" id="l670"><label class="px-3" for="l670">120 K - 4.5 M • 12
+                        <div class="cursor-pointer py-2 border text-gray-700 flex flex-row justify-start items-center">
+                            <input type="radio" name="l670" id="l670"><label class="px-3 text-lg" for="l670">120 K - 4.5 M • 12
                                 115 ads</label>
                         </div>
-                        <div class="cursor-pointer py-0.5 text-gray-700 flex flex-row justify-start items-center">
-                            <input type="radio" name="l670" id="l670"><label class="px-3" for="l670">More than 4.5 M • 2
+                        <div class="cursor-pointer py-2 border text-gray-700 flex flex-row justify-start items-center">
+                            <input type="radio" name="l670" id="l670"><label class="px-3 text-lg" for="l670">More than 4.5 M • 2
                                 423 ads</label>
                         </div>
                         <div class="cursor-pointer py-4 flex flex-row justify-between items-center">
@@ -134,17 +243,20 @@
                 </div>
             </section>
 
-            <a href="#" id="overlay"
-                class=" absolute hidden left-0 z-20 opacity-95 bg-gray-900 top-0 w-screen h-screen"></a>
 
+            <!-- The overlay that covers the screen when the location btn is clicked -->
+            <a href="#" id="overlay" 
+                class=" absolute hidden md:hidden left-0 z-20 opacity-95 bg-gray-900 top-0 w-screen h-screen"></a>
+
+            <!-- Locations - The popup that appears the location button is clicked on -->
             <section id="regions"
-                class="invisible min-h-[90vh] w-screen md:min-h-0 opacity-0 items-left absolute md:left-[5%] lg:left-[15%] md:top-[7%] z-50 md:w-[90vw] lg:w-[70vw] flex-col  md:my-20 py-0 md:py-6 rounded-t-3xl bg-gray-100 transition-all ease-in-out translate-y-full overflow-y-scroll">
+                class="min-h-[100vh] md:min-h-0  items-left left-0 lg:left-[15%] md:top-[7%] z-50 md:w-[90vw] lg:w-[70vw] flex-col  md:my-20 py-0 md:py-6 rounded-t-3xl fixed invisible  w-screen h-0 top-0 bg-gray-100 transition-transform ease-in-out translate-y-full opacity-0">
 
                 <div class="bg-green-700 md:bg-inherit flex flex-row justify-between items-center relative w-full px-5 md:px-10 py-3">
                     <span class="text-sm font-bold w-3/12 md:w-1/6 hidden md:flex">All Ghana</span>
 
-                    <div class="relative flex items-center">
-                        <svg class="absolute left-2 w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    <div class="relative flex items-center ">
+                        <svg class="absolute invisible md:visible left-2 w-5 h-5 mx-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             width="24" height="24" viewBox="0,0,256,256" style="fill:#000000;">
                             <g fill="#bbbbbb" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                                 stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
@@ -158,12 +270,24 @@
                             </g>
                         </svg>
 
+
+                        <!-- The back button that closes the location window on small devices -->
+
+                        <a href="#" id="closeLoc" class="absolute left-2">
+                       
+                            <img class="md:invisible  w-6 h-6 mx-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAp0lEQVR4nO3YPQoCMRBA4YGkX2+wkjm5bZowsdRKG3+w8gAeRRF2rSzFbIb3wfb7mCGEiAAAAAB/k9MQq26jpY10K6chmJ5j1WeoepVuI2o6TREPKeNaupO9RNhnnYhop4yr/idR/ERciGiuuJlEur0jWn7B9Ogl5PCjqfS+Wq6O3RkxS5U9XBZdXd9nxCxV9rZmNh0Apndx8By0i6b71r8CAAAAyDcv7cAPo3ECKbcAAAAASUVORK5CYII=">
+
+                        </a>
+                    
+
                         <input placeholder="Find country,region,state..." type="search"
                             class="bg-white border w-[90vw] rounded-full h-9 py-6 px-10 focus:outline-none md:w-[20vw] placeholder:text-sm md:py-4"
                             name="search" id="locSearchBar">
                     </div>
                 </div>
 
+                <!-- List of Regions -->
+                
                 <div id="regionDiv" class="flex flex-col md:flex-row items-start justify-start">
 
                     <div class="flex flex-col">
@@ -306,19 +430,26 @@
             </section>
 
 
+             <!-- Section of the front page that shows "All Ghana, Price and All filter" -->
             <section class="md:my-12 lg:my-12">
-                <!-- Section of the front page that shows "All Ghana, Price and All filter" -->
+
                 <div class="flex flex-row justify-start items-start px-2 lg:hidden md:hidden">
                     <button
                         class="location border px-2 py-1 text-xs text-gray-900 border-gray-900 rounded-full mx-1 my-2 lg:hidden">
                         All Ghana</button>
-                    <button
-                        class="border px-2 py-1 text-xs text-gray-900 border-gray-900 rounded-full mx-1 my-2 lg:hidden">Price,
-                        GH¢</button>
-                    <button
-                        class="flex flex-row justify-center text-gray-900 items-center border px-2 py-1 text-xs border-gray-900 rounded-full mx-1 my-2"><img
-                            src="/img/tonaton-estate-filter.png" alt=" " class="w-4 mx-1 lg:hidden"> <span>Allfilter</span>
+                    <button priceBtn
+                        class="priceBtn border px-2 py-1 text-xs text-gray-900 border-gray-900 rounded-full mx-1 my-2 lg:hidden">Price,
+                        GH¢
                     </button>
+                    <button
+                        id="allFilterBtn" class="flex flex-row justify-center text-gray-900 items-center border px-2 py-1 text-xs border-gray-900 rounded-full mx-1 my-2">
+
+                        <img src="./img/tonaton-estate-filter.png" alt=" " class="w-3 mx-1 lg:hidden"> 
+                        <span>All filter</span>
+
+                    </button>
+
+                    
 
                     <!-- The filter menu that will pop up when the All filter button is pressed -->
                     <div id="allFilterMenu" class="hidden flex-col items-center h-screen bg-gray-50">
@@ -356,7 +487,7 @@
                     <div
                         class="transition ease-in-out delay-150 rounded-full px-3 py-1 bg-green-300 hover:bg-green-600 relative lg:mx-4">
                         <button type="button" id="filter" class="text-sm text-gray-900 flex flex-row">
-                            <img src="/img/menu.png" alt=" " class="w-5 h-5 mx-1">
+                            <img src="./img/menu.png" alt="" class="w-5 h-5 mx-1">
                             <span>Recommended</span>
                         </button>
 
@@ -394,10 +525,9 @@
                 </div>
 
 
-
                 <!-- The images of properties and their info -->
                 <section
-                    class="bg-gray-100 py-2 px-2 flex flex-row md:flex-col lg:flex-row justify-center flex-wrap items-start gap-2 relative">
+                    class="bg-gray-100 py-2 px-2 flex flex-row md:flex-col lg:flex-row justify-evenly flex-wrap items-start relative">
 
                     <button id="properties"
                         class="properties">
@@ -410,13 +540,13 @@
                         <!-- The previous button on the img -->
                         <span id="propPrev" class="propPrev1">
                             <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png" />
+                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
                         </span>
                         <!-- The next button on the img -->
                         <span id="propForw"
                             class="propForw1">
                             <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png" />
+                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
                         </span>
 
                         <!-- The info related to the property -->
@@ -439,13 +569,13 @@
                         <!-- The previous button on the img -->
                         <span id="propPrev" class="propPrev1">
                             <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png" />
+                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
                         </span>
                         <!-- The next button on the img -->
                         <span id="propForw"
                             class="propForw1">
                             <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png" />
+                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
                         </span>
 
                         <div class="flex flex-col px-2">
@@ -468,13 +598,13 @@
                         <!-- The previous button on the img -->
                         <span id="propPrev" class="propPrev1">
                             <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png" />
+                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
                         </span>
                         <!-- The next button on the img -->
                         <span id="propForw"
                             class="propForw1">
                             <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png" />
+                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
                         </span>
                         <div class="flex flex-col px-2">
                             <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
@@ -494,13 +624,13 @@
                         <!-- The previous button on the img -->
                         <span id="propPrev" class="propPrev1">
                             <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png" />
+                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
                         </span>
                         <!-- The next button on the img -->
                         <span id="propForw"
                             class="propForw1">
                             <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png" />
+                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
                         </span>
                         <div class="flex flex-col px-2">
                             <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
@@ -522,13 +652,13 @@
                         <!-- The previous button on the img -->
                         <span id="propPrev" class="propPrev1">
                             <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png" />
+                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
                         </span>
                         <!-- The next button on the img -->
                         <span id="propForw"
                             class="propForw1">
                             <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png" />
+                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
                         </span>
 
                         <!-- Info about the property -->
@@ -553,7 +683,7 @@
                         <!-- The previous button on the img -->
                         <span id="propPrev" class="propPrev1">
                             <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png" />
+                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
                         </span>
 
                         <!-- The next button on the img -->

@@ -7,7 +7,7 @@
     @apply flex flex-row items-center mb-3;
   }
   .properties {
-    @apply bg-white text-left rounded w-[48%] md:w-[100%] lg:w-[48%] md:flex md:flex-row lg:flex lg:flex-row md:h-48 relative hover:shadow-lg border-green-100 border hover:border-white items-center transition ease-in-out delay-300;
+    @apply bg-white text-left rounded w-[48%] md:w-[100%] lg:w-[48%] md:flex md:flex-row lg:flex lg:flex-row md:h-48 relative hover:shadow-lg border-green-100 border hover:border-white items-center transition ease-in-out delay-300 lg:my-1;
   }
   .propertiesImg {
     @apply rounded md:w-[50%] md:object-cover md:h-[100%] lg:h-[100%];
@@ -16,13 +16,13 @@
     @apply hidden hover:opacity-90 px-2 py-2 text-xl absolute transition ease-in-out delay-100 bg-white rounded-full opacity-70 left-[10.8rem];
   }
   .propPrev2 {
-    @apply flex hover:opacity-90 px-2 py-2 text-xl absolute transition ease-in-out delay-100 bg-white rounded-full opacity-70 left-[10.8rem];
+    @apply hidden lg:flex hover:opacity-90 px-2 py-2 text-xl absolute transition ease-in-out delay-100 bg-white rounded-full opacity-70 left-[10.8rem];
   }
   .propForw1 {
     @apply hover:opacity-90 hidden px-2 py-2 text-xl absolute transition ease-in-out delay-100 bg-white rounded-full opacity-70 rotate-180;
   }
 
   .propForw2 {
-    @apply hover:opacity-90 flex px-2 py-2 text-xl absolute transition ease-in-out delay-100 bg-white rounded-full opacity-70 rotate-180;
+    @apply hover:opacity-90 hidden lg:flex px-2 py-2 text-xl absolute transition ease-in-out delay-100 bg-white rounded-full opacity-70 rotate-180;
   }
 }

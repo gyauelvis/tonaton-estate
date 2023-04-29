@@ -1,6 +1,7 @@
 let getRecommendedBtn = document.getElementById("filter");
 let filterWindow = document.getElementById("filterWindow");
 let windowStatus = false;
+
 //Getting the filter window to pop up once the recommend button is clicked
 let getFilterWindow = () => {
   if (windowStatus === false) {
@@ -20,7 +21,7 @@ getRecommendedBtn.addEventListener("click", getFilterWindow);
 let getpriceBtns = document.querySelectorAll(".price");
 let slideStat = false;
 let priceFxn = (e) => {
-  e.preventDefault;
+  e.preventDefault();
   let getPriceMenu = document.getElementById("priceMenu");
   let getPriceIcon = document.getElementById("price-icon");
   if (slideStat === false) {
@@ -65,4 +66,55 @@ getProperties.forEach((prop) => {
     prop.children[1].classList.replace("propPrev2", "propPrev1");
     prop.children[2].classList.replace("propForw2", "propForw1");
   });
+});
+
+//Working on the All filter Window
+
+let closeFilter = document.querySelector("#allFilterClose");
+let allFilterWindow = document.querySelector("#allFilterWindow");
+let allFilterBtn = document.querySelector("#allFilterBtn");
+
+//Popping the All Filter Window
+allFilterBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector("body").classList.add("fixed");
+  allFilterWindow.classList.replace("invisible", "visible");
+  allFilterWindow.classList.replace("h-0", "h-screen");
+
+  allFilterWindow.classList.replace("opacity-0", "opacity-100");
+  allFilterWindow.classList.replace("translate-y-full", "translate-y-0");
+});
+//Closing the All Filter Window
+
+closeFilter.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector("body").classList.remove("fixed");
+  allFilterWindow.classList.replace("visible", "invisible");
+  allFilterWindow.classList.replace("h-screen", "h-0");
+  allFilterWindow.classList.replace("opacity-100", "opacity-0");
+  allFilterWindow.classList.replace("translate-y-0", "translate-y-full");
+});
+
+//Getting the price window to popUp on small screens
+let priceBtn = document.querySelectorAll(".priceBtn");
+let closePriceBtn = document.querySelector("#priceClose");
+
+priceBtn.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector("body").classList.add("fixed");
+    priceWindow.classList.replace("invisible", "visible");
+    priceWindow.classList.replace("h-0", "h-screen");
+    priceWindow.classList.replace("opacity-0", "opacity-100");
+    priceWindow.classList.replace("translate-y-full", "translate-y-0");
+  });
+});
+
+closePriceBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector("body").classList.remove("fixed");
+  priceWindow.classList.replace("visible", "invisible");
+  priceWindow.classList.replace("h-screen", "h-0");
+  priceWindow.classList.replace("opacity-100", "opacity-0");
+  priceWindow.classList.replace("translate-y-0", "translate-y-full");
 });

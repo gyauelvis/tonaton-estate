@@ -3,26 +3,35 @@ let regionSec = document.getElementById("regions");
 let getLocBtn = document.querySelectorAll(".location");
 let getOverlay = document.querySelector("#overlay");
 let regStatus = false;
+let closeLoc = document.querySelector("#closeLoc");
 
 //Getting the dark overlay to cover up the page when the location button is clicked
+
 //Getting the window to popUp too
 getLocBtn.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    e.preventDefault;
+    e.preventDefault();
     document.querySelector("body").classList.add("fixed");
     regionSec.classList.replace("invisible", "visible");
     regionSec.classList.replace("opacity-0", "opacity-100");
     regionSec.classList.replace("md:min-h-0", "md:min-h-[90vh]");
     regionSec.classList.replace("translate-y-full", "translate-y-0");
-    getOverlay.classList.replace("hidden", "block");
+    getOverlay.classList.replace("md:hidden", "md:block");
   });
 });
 
 // After the window pops up, whenever the overlay is clicked, the window show close
 getOverlay.addEventListener("click", (e) => {
-  e.preventDefault;
+  e.preventDefault();
   document.querySelector("body").classList.remove("fixed");
   getOverlay.classList.replace("block", "hidden");
+  regionSec.classList.replace("visible", "invisible");
+  regionSec.classList.replace("opacity-100", "opacity-0");
+  regionSec.classList.replace("translate-y-0", "translate-y-full");
+  regionSec.classList.replace("md:min-h-[90vh]", "md:min-h-0");
+});
+
+closeLoc.addEventListener("click", (e) => {
   regionSec.classList.replace("visible", "invisible");
   regionSec.classList.replace("opacity-100", "opacity-0");
   regionSec.classList.replace("translate-y-0", "translate-y-full");

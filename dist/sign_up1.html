@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonaton | Sell Your Property With Us</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <main>
+        <div class="flex flex-row h-screen w-screen bg-green-100">
+            <section class="bg-[url('./img/illustration.svg')] h-screen w-1/2 bg-cover bg-no-repeat bg-center bg-white rounded-lg">
+                <div>
+                    <h1>
+                        tonaton
+                    </h1>
+                </div>
+            </section>
+
+            <section class="flex h-screen items-center justify-center w-1/2 rounded-lg">
+                <form id="createAccountForm" class="flex flex-col justify-start items-start bg-white rounded-lg px-10 py-5 w-80">
+                    <div class="flex flex-col ">
+                        <h2 class="text-2xl font-bold py-3 text-green-500">
+                                Welcome to Tonaton
+                        </h2>
+                        <span>
+                            Register your account
+                        </span>
+                    </div>
+                    <div>
+                            <label for="name" id="nameLabel" class="text-gray-500">Name</label><br>
+                            <input type="text" name="name" id="name"  class="border w-60 py-1 rounded my-2 border-gray-300 focus:outline-none px-2" required>
+                    </div>
+                    <div>
+                            <label for="email" id="emailLabel" class="text-gray-500">Email</label><br>
+                            <input type="email" name="email" id="email"  class="border w-60 py-1 rounded my-2 border-gray-300 focus:outline-none px-2" required>
+                    </div>
+                    <div>
+                            <label for="password" id="passwordLabel" class="text-gray-500">Password</label><br>
+                            <input type="password" name="password" id="password" class="border w-60 py-1 rounded my-2 border-gray-300 focus:outline-none px-2" required>
+                            <div id="passwordHelp" class="w-64 text-sm py-1 text-red-900"></div>
+                    </div>
+                    <div>
+                            <input type="submit" value="Create Account" class="bg-green-500 w-60 text-white font-semibold py-1 rounded my-2" id="submit">
+                    </div>
+                     <div class="py-2">
+                            <span class="text-sm">Already have an Account? </span><a href="#" id="login" class="text-green-900 underline">Login</a>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

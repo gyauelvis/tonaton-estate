@@ -3,8 +3,8 @@ const getEmail = document.querySelector("#email");
 const getPassword = document.querySelector("#password");
 const getUserName = document.querySelector("#name");
 const passwordHelp = document.querySelector("#passwordHelp");
-getSubmitBtn.addEventListener("click", (e) => {
-  e.preventDefault;
+const switchToCreateAcc = document.querySelector("#switchToCreateAcc");
+const submitFxn = (e) => {
   const emailRegex = /.+@.+.\..+/;
   const digitRegex = /[0-9]/;
   const smallLetterRegex = /[a-z]/;
@@ -35,14 +35,20 @@ getSubmitBtn.addEventListener("click", (e) => {
     passwordHelp.textContent =
       "Password must contain be 8 characters long consisting of at least one symbol, an uppercase, a lower case and a number";
   }
-});
-
+};
+//Switching from Creating Acc to Login
 const getCreateAccForms = document.querySelector("#createAccountForm");
 const getLoginForms = document.querySelector("#loginAccountForm");
 const getLoginFormsBtn = document.querySelector("#login");
 getLoginFormsBtn.addEventListener("click", (e) => {
   getLoginForms.classList.replace("hidden", "flex");
-  getLoginForms.classList.replace("translate-x-80", "translate-x-0");
   getCreateAccForms.classList.replace("flex", "hidden");
-  
 });
+
+//Switching from Login to Creating Acc
+switchToCreateAcc.addEventListener("click", (e) => {
+  getLoginForms.classList.replace("flex", "hidden");
+  getCreateAccForms.classList.replace("hidden", "flex");
+});
+
+getSubmitBtn.addEventListener("click", submitFxn);
