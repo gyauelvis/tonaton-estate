@@ -32,6 +32,7 @@ getOverlay.addEventListener("click", (e) => {
 });
 
 closeLoc.addEventListener("click", (e) => {
+  document.querySelector("body").classList.remove("fixed");
   regionSec.classList.replace("visible", "invisible");
   regionSec.classList.replace("opacity-100", "opacity-0");
   regionSec.classList.replace("translate-y-0", "translate-y-full");

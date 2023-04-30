@@ -19,30 +19,35 @@ getRecommendedBtn.addEventListener("click", getFilterWindow);
 
 //Slide up when the price is clicked
 let getpriceBtns = document.querySelectorAll(".price");
+
 let slideStat = false;
 let priceFxn = (e) => {
   e.preventDefault();
-  let getPriceMenu = document.getElementById("priceMenu");
-  let getPriceIcon = document.getElementById("price-icon");
+  let getPriceMenu = document.querySelector("#priceMenu");
+  let getPriceIcons = document.querySelectorAll(".price-icon");
+
+  // Sliding up(CLOSING) the PRICE
   if (slideStat === false) {
     getPriceMenu.classList.add("invisible");
     getPriceMenu.classList.replace("opacity-100", "opacity-0");
-    getPriceMenu.classList.add("h-0");
     getPriceMenu.classList.replace("translate-y-0", "-translate-y-10");
-    getPriceIcon.classList.remove("-rotate-90");
-    getPriceIcon.classList.add("rotate-90");
+    getPriceMenu.classList.add("h-0");
+    getPriceIcons.forEach((icon) => {
+      icon.classList.replace("-rotate-90", "rotate-90");
+    });
     slideStat = true;
-  } else if (slideStat === true) {
+  } // Sliding up(CLOSING) the PRICE
+  else if (slideStat === true) {
     getPriceMenu.classList.remove("invisible");
     getPriceMenu.classList.replace("opacity-0", "opacity-100");
     getPriceMenu.classList.remove("h-0");
     getPriceMenu.classList.replace("-translate-y-10", "translate-y-0");
-    getPriceIcon.classList.add("-rotate-90");
-    getPriceIcon.classList.remove("rotate-90");
-    console.log(slideStat);
+    getPriceIcons.forEach((icon) => {
+      icon.classList.replace("rotate-90", "-rotate-90");
+    });
+
     slideStat = false;
   }
-  console.log(getPriceMenu);
 };
 getpriceBtns.forEach((btn) => {
   btn.addEventListener("click", priceFxn);
@@ -60,6 +65,7 @@ getProperties.forEach((prop) => {
     });
   });
 });
+
 //Getting the forward and previous icons to go off once the image is not hovered
 getProperties.forEach((prop) => {
   prop.addEventListener("mouseout", (e) => {
@@ -69,7 +75,6 @@ getProperties.forEach((prop) => {
 });
 
 //Working on the All filter Window
-
 let closeFilter = document.querySelector("#allFilterClose");
 let allFilterWindow = document.querySelector("#allFilterWindow");
 let allFilterBtn = document.querySelector("#allFilterBtn");
@@ -84,8 +89,8 @@ allFilterBtn.addEventListener("click", (e) => {
   allFilterWindow.classList.replace("opacity-0", "opacity-100");
   allFilterWindow.classList.replace("translate-y-full", "translate-y-0");
 });
-//Closing the All Filter Window
 
+//Closing the All Filter Window
 closeFilter.addEventListener("click", (e) => {
   e.preventDefault();
   document.querySelector("body").classList.remove("fixed");
@@ -96,10 +101,11 @@ closeFilter.addEventListener("click", (e) => {
 });
 
 //Getting the price window to popUp on small screens
-let priceBtn = document.querySelectorAll(".priceBtn");
+let priceBtns = document.querySelectorAll(".priceBtn");
 let closePriceBtn = document.querySelector("#priceClose");
+let priceWindow = document.querySelector("#priceWindow");
 
-priceBtn.forEach((btn) => {
+priceBtns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     e.preventDefault();
     document.querySelector("body").classList.add("fixed");

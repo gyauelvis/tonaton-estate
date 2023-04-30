@@ -67,10 +67,11 @@
 
             <div class="bg-white rounded-lg w-10/12 px-2 py-2 border my-1 h-14">
 
+                <!-- The one in the filter results window on smaller devices -->
                 <a href="#" class="priceBtn flex flex-row justify-between items-center py-1">
                     <h2 class="font-bold text-base">Price, GH¢</h2>
 
-                    <span id="price-icon" class="px-4 text-xl rotate-90 transition ease-in-out">
+                    <span class="price-icon px-4 text-xl rotate-90 transition ease-in-out">
                         <img class="w-5 h-5"
                             src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png" />
                     </span>
@@ -91,13 +92,14 @@
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAApUlEQVR4nO2VSw7DIAxEuURQe8T0uMmiJ/BY+BKpkLKoKgoeN1E38QoJZh6fAVK6ii0As6pmVqequWpH5g8Am4isDERVc9VUbfXoASYRWfaBTzO7j8w/NaWUGyWwDoQ2ZyCImnsg+NW8B8FR5q2EiMj63o7E2bOS7ZCZjwDmiPD/twiNA41cRrd5+tJHQzxRRBTC5BwsJHKJwEBOf65P/3CuSo16AfOr8Ox1bsSHAAAAAElFTkSuQmCC">
             </a>
 
+            <!-- The price on top of the menu the price button is clicked on small screen -->
             <span class="text-2xl text-white font-semibold mx-auto">
                Price, GH¢
             </span>
 
         </div>
 
-        <div id="priceMenu" class="flex flex-col px-5 py-1 text-sm translate-y-0 transition-all ease-in-out opacity-100">
+        <div id="priceMenuMobile" class="flex flex-col px-5 py-1 text-sm translate-y-0 transition-all ease-in-out opacity-100">
             <div class="cursor-pointer py-4 text-gray-700 flex flex-row gap-5 items-center ">
 
                 <input type="text" name="min" id="min" placeholder="min"
@@ -195,7 +197,7 @@
                     <a href="#" class="price flex flex-row justify-between items-center py-1">
                         <h2 class="font-bold text-base">Price, GH¢</h2>
 
-                        <span id="price-icon" class="px-4 text-xl -rotate-90 transition ease-in-out">
+                        <span class="price-icon px-4 text-xl -rotate-90 transition ease-in-out">
                             <img class="w-5 h-5"
                                 src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png" />
                         </span>
@@ -213,26 +215,30 @@
                                 class="border w-24 rounded h-12 p-2 focus:outline-none">
 
                         </div>
-                        <div class="cursor-pointer py-2 border text-gray-700 flex flex-row justify-start items-center">
-                            <input type="radio" name="l670" id="l670" class="w-4 h-4 "><label class="px-3 radio"
-                               text-lg  for="l670">Under 670 • 2 907
-                                ads</label>
+                        
+                        <div class="cursor-pointer py-3 border-b text-gray-700 flex flex-row justify-start items-center">
+                            <input type="radio" name="l670" id="l670" class="w-4 h-4 "><label class="px-3 radio" for="l670">
+                                Under 670 • 2 907ads
+                            </label>
                         </div>
-                        <div class="cursor-pointer py-2 border text-gray-700 flex flex-row justify-start items-center">
-                            <input type="radio" name="l670" id="l670"><label class="px-3 text-lg" for="l670">670 - 4.7 K • 11
+                        <div class="cursor-pointer py-3 border-b text-gray-700 flex flex-row justify-start items-center">
+                            <input type="radio" name="l670" id="l670"><label class="px-3" for="l670">670 - 4.7 K • 11
                                 630 ads</label>
                         </div>
-                        <div class="cursor-pointer py-2 border text-gray-700 flex flex-row justify-start items-center">
-                            <input type="radio" name="l670" id="l670"><label class="px-3 text-lg" for="l670">4.7 - 120 K • 19
+                        <div class="cursor-pointer py-3 border-b text-gray-700 flex flex-row justify-start items-center">
+                            <input type="radio" name="l670" id="l670"><label class="px-3" for="l670">4.7 - 120 K • 19
                                 384 ads</label>
                         </div>
-                        <div class="cursor-pointer py-2 border text-gray-700 flex flex-row justify-start items-center">
-                            <input type="radio" name="l670" id="l670"><label class="px-3 text-lg" for="l670">120 K - 4.5 M • 12
-                                115 ads</label>
+                        <div class="cursor-pointer py-3 border-b text-gray-700 flex flex-row justify-start items-center">
+                            <input type="radio" name="l670" id="l670">
+                            <label class="px-3" for="l670">
+                                120 K - 4.5 M • 12115 ads
+                            </label>
                         </div>
-                        <div class="cursor-pointer py-2 border text-gray-700 flex flex-row justify-start items-center">
-                            <input type="radio" name="l670" id="l670"><label class="px-3 text-lg" for="l670">More than 4.5 M • 2
-                                423 ads</label>
+                        <div class="cursor-pointer py-3 border-b text-gray-700 flex flex-row justify-start items-center">
+                            <input type="radio" name="l670" id="l670"><label class="px-3" for="l670">
+                                More than 4.5 M • 2423 ads
+                            </label>
                         </div>
                         <div class="cursor-pointer py-4 flex flex-row justify-between items-center">
                             <button disabled="disabled" class="text-green-400">Clear</button>
@@ -437,7 +443,7 @@
                     <button
                         class="location border px-2 py-1 text-xs text-gray-900 border-gray-900 rounded-full mx-1 my-2 lg:hidden">
                         All Ghana</button>
-                    <button priceBtn
+                    <button
                         class="priceBtn border px-2 py-1 text-xs text-gray-900 border-gray-900 rounded-full mx-1 my-2 lg:hidden">Price,
                         GH¢
                     </button>
@@ -471,7 +477,7 @@
                             <a href="#" class="price flex flex-row justify-between items-center py-1 bg-gray-200 w-[90vw] border h-14 my-3 rounded-lg border-gray-300">
                                 <h2 class="font-bold text-base px-2">Price, GH¢</h2>
                 
-                                <span id="price-icon" class="px-4 text-xl -rotate-90 transition ease-in-out">
+                                <span class="price-icon px-4 text-xl -rotate-90 transition ease-in-out">
                                     <img class="w-5 h-5"
                                         src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png" />
                                 </span>
