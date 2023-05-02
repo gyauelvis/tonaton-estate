@@ -12,7 +12,7 @@
 </head>
 <body class="bg-green-100">
     <div class="flex flex-col justify-center items-center w-screen h-screen bg-green-100 relative">
-        <form id="createAccountForm" class="flex flex-col justify-start items-start bg-white rounded-lg px-10 py-5 w-80 lg:w-1/3">
+        <form id="createAccountForm" class="flex flex-col justify-start items-start bg-white rounded-lg px-10 py-5 w-80 lg:w-[26.9rem]">
             <div class="flex flex-col lg:justify-start py-3">
                 <h2 class="text-xl lg:text-[2rem] lg:py-1 font-bold  text-green-500 font-poppins">
                         Welcome to Tonaton
@@ -30,9 +30,11 @@
                     <input type="email" name="email" id="email" placeholder="Enter email"  class="border w-60 lg:w-[22rem] py-1 lg:p-1.5 rounded my-2 border-gray-300 focus:outline-none focus:ring-1 focus:ring-green-200 px-2" required>
             </div>
             <div>
-                    <label for="password" id="passwordLabel" class="text-gray-600 lg:text-lg font-poppins">Password</label><br>
-                    <input type="password" name="password" id="password" placeholder="Password" class="border w-60 lg:w-[22rem] py-1 lg:p-1.5 rounded my-2 border-gray-300 focus:outline-none focus:ring-1 focus:ring-green-200 px-2" required>
-                    <div id="passwordHelp" class="w-64 text-sm py-1 text-red-900"></div>
+                <label for="password" id="passwordLabel" class="text-gray-600 lg:text-lg font-poppins">Password</label><br>
+                <input type="password" name="password" id="password" placeholder="Password" class="border w-60 lg:w-[22rem] py-1 lg:p-1.5 rounded my-2 border-gray-300 focus:outline-none focus:ring-1 focus:ring-green-200 px-2" required>
+                <div id="passwordHelp" class="w-64 text-sm py-1 text-red-900">
+
+                </div>
             </div>
             <div class="mx-2 py-1">
                 <input type="checkbox" value="TandP" class="border-solid border-green-300 outline-none"><label for="TandC" class="px-2 font-poppins lg:text-lg text-sm">Agree to Terms and Policy</label>
@@ -60,7 +62,7 @@
         </form>
 
         <form id="loginAccountForm" class="hidden flex-col justify-start items-center bg-white 
-        rounded-lg px-10 py-5 w-80 lg:w-1/3 absolute">
+        rounded-lg px-10 py-5 w-80 lg:w-[26.9rem] absolute">
         <div class="flex-col justify-start items-center">
             <h2 class="text-xl lg:text-3xl font-bold py-3 lg:py-5 text-green-500 font-poppins">
                     Login to your account

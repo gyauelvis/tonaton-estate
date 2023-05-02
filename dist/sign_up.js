@@ -5,21 +5,23 @@ const getUserName = document.querySelector("#name");
 const passwordHelp = document.querySelector("#passwordHelp");
 const switchToCreateAcc = document.querySelector("#switchToCreateAcc");
 const submitFxn = (e) => {
-  const emailRegex = /.+@.+.\..+/;
-  const digitRegex = /[0-9]/;
-  const smallLetterRegex = /[a-z]/;
-  const capsRegex = /[A-Z]/;
-  const symbolRegex = /[!@#$%^&*(),.?":{}|_<>]/;
-  let emailValue = getEmail.value;
-  let passwordValue = getPassword.value;
+const emailRegex = /.+@.+.\..+/;
+const digitRegex = /[0-9]/;
+const smallLetterRegex = /[a-z]/;
+const capsRegex = /[A-Z]/;
+const symbolRegex = /[!@#$%^&*(),.?":{}|_<>]/;
+let emailValue = getEmail.value;
+let passwordValue = getPassword.value;
   if (emailRegex.test(emailValue)) {
     getEmail.classList.remove("border-red-700");
   } else {
+    e.preventDefault();
     getEmail.classList.add("border-red-700");
   }
   if (getUserName.value == "") {
     getUserName.classList.add("border-red-700");
   } else {
+    e.preventDefault();
     getUserName.classList.remove("border-red-700");
   }
   if (
@@ -31,6 +33,7 @@ const submitFxn = (e) => {
     getPassword.classList.remove("border-red-700");
     passwordHelp.textContent = "";
   } else {
+    e.preventDefault();
     getPassword.classList.add("border-red-700");
     passwordHelp.textContent =
       "Password must contain be 8 characters long consisting of at least one symbol, an uppercase, a lower case and a number";

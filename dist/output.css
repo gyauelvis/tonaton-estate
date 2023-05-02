@@ -1786,6 +1786,30 @@ video {
     width: 22rem;
   }
 
+  .lg\:w-96 {
+    width: 24rem;
+  }
+
+  .lg\:w-\[30rem\] {
+    width: 30rem;
+  }
+
+  .lg\:w-\[27rem\] {
+    width: 27rem;
+  }
+
+  .lg\:w-\[26rem\] {
+    width: 26rem;
+  }
+
+  .lg\:w-\[26\.5rem\] {
+    width: 26.5rem;
+  }
+
+  .lg\:w-\[26\.9rem\] {
+    width: 26.9rem;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
