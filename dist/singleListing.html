@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>tonaton estate</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" 
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-green-50">
+
+    <main>
+        <section class="flex flex-col items-start h-screen relative">
+            <div class="my-2 rounded-3xl flex flex-col items-center justify-center w-[96%] h-2/3 mx-auto">
+                <!-- The img of the property -->
+                <img src="./img/house-1477041_1280.jpg" alt="" class="mx-auto block rounded-3xl object-cover w-full h-full">
+            </div>
+            <!-- The Back button on the Img -->
+            <a href="#" id="closeLoc" class="absolute top-4 left-4  bg-green-500 bg-opacity-20 rounded-full p-2"> 
+                
+                <img src="./img/arrow.png" class="md:invisible  w-5 h-5">
+                <!-- <img class="md:invisible  w-7 h-7" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAp0lEQVR4nO3YPQoCMRBA4YGkX2+wkjm5bZowsdRKG3+w8gAeRRF2rSzFbIb3wfb7mCGEiAAAAAB/k9MQq26jpY10K6chmJ5j1WeoepVuI2o6TREPKeNaupO9RNhnnYhop4yr/idR/ERciGiuuJlEur0jWn7B9Ogl5PCjqfS+Wq6O3RkxS5U9XBZdXd9nxCxV9rZmNh0Apndx8By0i6b71r8CAAAAyDcv7cAPo3ECKbcAAAAASUVORK5CYII="> -->
+            </a>
+
+            <p class="text-3xl text-green-600 py-2 px-3 font-oswald">
+                GH¢ 15,0432
+            </p>
+            
+            <div class="flex flex-row px-3 items-center justify-center">
+
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEuElEQVR4nO1ZW2gcZRT+U6J4i7XeUPRBUKuFKioWXwSrIl5QRHG17O7M9/2zYR4WFF+kapWxrT4oxTcVb6APRVHU0iJI7YNIixKrFauUKkhFhGjFar3Fpm3kJOfHcdO5bPafZCN+MBCyZ85lzvnP7Tfmf0xHo9E4kWQdwPMARgD8AOCAPvL3CMnnAKyIomjI9BuiKLoAwIsk/yA5UeYB8DvJF0ieP9f6mziOjyO5DsC4KnhYPbHKWnuVGNhsNo+XR/6W/5F8CMBHQqsGHSD5BIBj5sQI+ZIAdqoyhwCsD8Pw3LLvt1qt80i+4gwi+UGj0TjTzCaCILhUYl4V2E3yspnyiqLocgBf6gf5NgzDi80semLSCACb6/X6ol55tlqtkwG864yp3DNyJlLhtDlJkkGPvI8iucWFWaVnRg62CycfnsjwzFcqY7WpMMWOy8Hu5UwUgeQyTQC/ATjDuwCtExJS670zny7rVZX1tPeKrQXscJkU22w2TwewluQO+bL6fEJyjbX2tDIJheqVdrt9gjdDpO3QLzRSRGutvQPA/pyq/gvJ20vI3K70d3kzRHonNWRVkRGpAveWVHJX2QEsB7DBFdAwDG8rkPmw8nnWpyHS7E2IYgXhNOkJAPdl0ZFcqTQ/x3F8ahZdGIZXK92HxhcA7BWmQRAszqFZ6zxRgt/GohQbBMFipfne+ALJv4RpXusN4NMir3V+bUkAWTRRFA2pR8aML5D8U5lmVlsAvwpNmSyTUnJ/QWc9IaNBL7p3KjmqgjMLlDsfZQzRAWwyg2XRhGF4lsr8zvgCyV0aWktzaHao4OUl+F2jtB9n0QC4RI39vBfdO5luEqZhGN6Zo9waVW5DWX4AHsmhaaghb/aieyfTx5Tpo1k0UrG12Andyiw6kg8ozb4gCE7JoXu8yNiuIZ5Q4Vvy6KRia1MpCmyU7CRnRh4Jp5QnhObWAl5bVWYuXVfQYifj7JhkkzxaqdhS7HJalH1FygE4STvt8TiOFxqf0KZPFLmpiFYqthQ7OcySljWjbZcwyQsnB5I1lbXV+Iar3ABe8s58uqw3is5aL8wvdLm/KLx6QRzHC7UAy2rpnEqESKioVxqVCDCTMu5WGe9VJUNit+2WA1XwT5JkkOTXKqNuqoKk0VRGWuabP4AVri2RrYpv/p3CnlRhr1cVuiQfNFVDlmfuMJK8yBdfkte5gUvqiJkNAHjKt1fkcLPKfdaRMDw8fLbbqlhrr+yVn3QDasSPVSz+ciFV2k15SZIsmCmfWq12tFtik2z71bKcAscC2KPjrZ0pH1lUaJh+4XOXPNN916hMfd2+L61/Kp1fb+YQAwC2qSLrun2Z5Mv6ITaZuUYwdekj12cHrbVXlH0PwA3uLrGbm65K4cZcme3L3GvoFuUbNeQe0y+oTWWez4rGYQeSz7h5o5eMVwlk66H36YfyNikaUtKijwVBsMT0I0iu1nDZc6Q2Q0ZmWYEqzb2mX5EkySCA91NrnIHUbwsAvKNGvJ3+rS8xPNW+7O28hkiNyqOVXKlVAZK36DmQe5AbrbU36wroIIBrzXwC/unFftIVkHjjfjMPMUDytdQ+619nZl4hiqIhuXGSGd/rpab5D+NviOZVJfxRoJgAAAAASUVORK5CYII=" class="h-6 w-6">
+
+                <span class="text-lg font-poppins px-0.5 text-gray-700">Oyarifa, Greater Accra</span>
+            </div>
+
+            <div class="flex flex-row px-3 items-center flex-wrap justify-center py-2 text-[1.5rem] font-poppins text-gray-700">
+                <span class="flex flex-row justify-center items-center">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABo0lEQVR4nO2WQUoDQRBFy00OkJ0u1EvoARJxEer/SRaNXsjs1KV6Ab2GegtdKCIBXUYXgRCINERsI+NMT+z0RPpBEZjMVP/f1fMZkUQikUiEJsuybZIXAJ4BTEhOQxSAyWyN806ns/Un4lV1H8BbKNHMryHJvYV3PpL46acJVd2sbMAeG6fZA4CWMaYhgTDGNFS1DeDROVZnlRva8+g0asmSUNW2s3FPlRu5L2zInZ/HruW+2FIV9zxWbhJzbf7SJC9aZy/9dZZlByKyZovkob3mBkJRZDKkAY9ovQRwVSUyGcpAwGgdupEZzEBRtPZ6vXWSp/MCAZzY/8pGJkMZKButAG6d+258I5MBDZSKVpJ95/m+b2RyUQPGmGaAc16pjDFNL/HdbncXwCC2cH5NZqCqO6XEk9wA8BpbNH/WixsCudi0WOYHXB45KXUsRZC8j/EBVyalANxJEQDGZVJmWZjvKTUufGDh+AoAfTQlAwFgmkBkmCYQGaYJrOoEWMOSZIArNAGpCfQ0MJrdPJKaQB9NJI8AvNtfqQmsoaZEIpH4J3wAib5WoiEOBRIAAAAASUVORK5CYII=" class="h-6 w-6"> 
+                    <span class="px-0.5">
+                        3 Bedrooms
+                    </span>
+                </span>
+
+                <span class="flex justify-center items-center px-2">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA7ElEQVR4nO2SMQ4BQRiFp3IBOioanYaOQ3AEF5BMdve9f5s9g1rCGbgAPReg2Zpia4WETPKLSHYtK1T7kmn2vf99M7NjTKlSpf4jktdfLPM3gIi0SSbuo+d5rS9uoqnliet8MgEsnSkio6IAAEMFrNLMqZq2KICkdR2uKw0wUcDsC8BMAZM0s6eAI8nqp+XW2hqAk+vwfb+bGgKwUcgWQD+KokpescuIyIDkTmfXmeEgCBokD0WfJYB9GIb1lzsCMNaBM8nLG8UXzTrAOPcuSS4yf1SG7g8EwNzkiWSs4U5u+AHo6Gnid2dKmbtuZjEpZBPDINkAAAAASUVORK5CYII=" class="h-7 w-7">
+                    <span class="px-1">
+                        2 Bathrooms
+                    </span>
+                </span>
+
+                <span class="flex flex-row justify-center items-center px-2">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA30lEQVR4nO2WTQ7CIBCFuYRGD0+YR0+iJiq1K114HAzRJkj4m7YbLS9pupk3H7TMMEI0rU4ALgBs+BDRqeR1MTGvy1kDtgnwcQbYcsHPruv2gikp5QbAfRKYiB7jW2u9rYW6WN/LBsvvVVftPPQopXZssIgkysFj0DBf8YD4B8n/dAD6jO8W+zVhPpZcIgBDriw+ZThwzkNT0wql37V8BnBIxbhanVVOAIxfr0EDMRlfH2sgYb5JLXNsgzGl2uvsS0JloDn471yLYOx00UEAy85ctgZslp65iOhaBDf9nV6ndP9X1OnDOgAAAABJRU5ErkJggg==" class="h-5 w-5">
+                    <span class="px-1">
+                        250ft
+                    </span>
+                </span>
+            </div>
+
+            <div class="flex justify-center items-center px-4 py-2 font-poppins">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEIUlEQVR4nO1ZS4hcVRCtMX6CogY1aowfTMCVoOIiUZFBcaShX99z6slTMITW4IyCUZfiahYhK5WIEjWgG92pOIkRPwsxuPA3kElAJImLqKgIxmiiYvxLzdSFR9Ov0x06b+7AHHibfnVf37q36tS5dUUWsYj5QwghkJwmeYzkXpI3yEJCURSnk9xK8r+O56dms7lSFgKKojgXwHs2cQC/k9yYZdkFJHf4b29J6iiK4mIAe3z1vyV5fce7Q/5ug6SKRqNxDsndvuqf53l+RaeNqq7z9z9nWXa5pIZGo3EGyQ98tT8jeX6VLcmpZEOM5GZ34itVvbSXrYfYj27flpRA8rBNLIRwSz/2ANa7I4dVdYWkAs7VCQuXZf2OAfCmOzMlqYDkFzYpVb263zEWgpb0vgB3SQqgJ7Cx0oDjxt2R/ZICSG70MHlpkHFeKM2Rv0VkROYbJFeT/Jfk0RDC2f2OA3CPL8C0pAK4LCH5QD/27XZ7KYAvk6NhknfGeB8dHT21D/vH3ImZycnJUyQVFEWxxKSJO3N/L1tVvZDkEa89t0lqAHCHO/JdlmVnVtmR3Oa7sUMSxQiAT3ySj/fIjV/c4fskVYQQrgPwJ4B/ANzczUZVH44HrVardaWkCgCbYuJXhJjt3E63+bRXGKZw1N3rq761m43pshI5bDeykBQB4Fo/6hoz3dujkP7gDm9Lorp3gzkQz+4hhDXdbKyzEpOf5BZJFSSfjpRc1UFR1Vvj7gF4UlLExMTEaSTf90l+WJXYAFrGdr4zmyVFFEWxnORBd+ZtI4NudqpalJzZkmTOkLyK5PfuzCtVLOU7MxtmJJ9Pks1U9Rorgj7JF6pW3HMmVv/t3cLRHHQymfHie8CEq9QFADeS/PV4ia2qa0vUPF3uk5nQLNWpzue1Vqt1US3OkLwdwB8lZ7ruTJ7nq2LR9E7NeFQE/ljetf2kOR4VtXU0AdxdizMhBC0582KPnFlG8o2OVT8C4FEToB22lxmZlOymrI9Wy87EMCP5ahWbuTZ7yPIGwHN2njnOdzfEXLRmoPXR5GQjz/ObSgTwTi8Baa3Zfr/bbDZXlnpn5tDOEMIlcrJ1WYmaPxpm95FkO3ZCbcGqpNJQ60ypGfHNMP9QVVeUSGJG6lAAAHb5Hx6rUs0n+O3z/Lu/SV3aDMAzpdh+dhgHL5KPRL0ndcKrdmyOHzBSONFvqeraSPWq2pS64SQwW8FNhpB8Ymxs7KxBvpHn+aoSkTwl8wWrLd4D+Cuea6xv1k8TsJhT3ft83LsWtjLfsItVkh+Xcme/tWeres2Yq/JR3uwepCddB0a8CTi7yv4cBfCyXWnY/Yxdj5t6Jvl1pNvaROSgsLCyyyFvnNstQDcVbLu2yxyThQBLZlV9kOTrxm52KHP1u2kQSbOIRchw8T8ce5D8sM7aMQAAAABJRU5ErkJggg==" class="h-6 w-6">
+                <span class="text-gray-700">
+                    +233 59 335 3124
+                </span>
+            </div>
+
+            <!-- <div class="flex flex-col px-4 py-3 font-poppins">
+                <span  class="font-bold text-xl py-2">
+                    Details
+                </span>
+                <span class="text-gray-700">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quaerat a dolores sit voluptates cum suscipit iusto ipsa eum, necessitatibus beatae, magnam est quos neque.
+                </span>
+            </div> -->
+
+            <!-- <div class="flex flex-col px-4 py-3 font-poppins">
+                <span  class="font-bold text-xl py-2">
+                    Contact
+                </span>
+                <span class="text-gray-700">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quaerat a dolores sit voluptates cum suscipit iusto ipsa eum, necessitatibus beatae, magnam est quos neque.
+                </span>
+            </div> -->
+        
+
+        </section>
+        
+        
+        
+
+        
+        
+
+    
+    </main>
+</body>
+</html>
