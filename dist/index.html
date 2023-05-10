@@ -152,7 +152,7 @@
         
     </section>
 
-    <main class="md:px-5 lg:px-10 md:bg-gray-100">
+    <main class="md:px-5 lg:px-10 md:bg-gray-100 z-10">
         <section class="flex flex-row">
 
             <!-- Side bar -->
@@ -285,7 +285,6 @@
                         <a href="#" id="closeLoc" class="absolute left-2">
                        
                             <img class="md:invisible  w-6 h-6 mx-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAp0lEQVR4nO3YPQoCMRBA4YGkX2+wkjm5bZowsdRKG3+w8gAeRRF2rSzFbIb3wfb7mCGEiAAAAAB/k9MQq26jpY10K6chmJ5j1WeoepVuI2o6TREPKeNaupO9RNhnnYhop4yr/idR/ERciGiuuJlEur0jWn7B9Ogl5PCjqfS+Wq6O3RkxS5U9XBZdXd9nxCxV9rZmNh0Apndx8By0i6b71r8CAAAAyDcv7cAPo3ECKbcAAAAASUVORK5CYII=">
-
                         </a>
                     
 
@@ -535,11 +534,10 @@
 
 
                 <!-- The images of properties and their info -->
-                <section
-                    class="bg-gray-100 py-2 px-2 flex flex-row md:flex-col lg:flex-row justify-evenly flex-wrap items-start relative">
+                <section id="sellingProperties" class="bg-gray-100 py-2 px-2 flex flex-row md:flex-col lg:flex-row justify-evenly flex-wrap items-start relative">
 
                     <button id="properties"
-                        class="properties">
+                       onclick="getSingleList('prop1')" class="properties">
 
                         <!-- The img of the property -->
                         <img src="./img/houses (1).jpg"
@@ -570,7 +568,7 @@
                     </button>
 
                     <button id="properties"
-                        class="properties">
+                       onclick="getSingleList('prop2')" class="properties">
                         <img src="./img/houses (2).jpg"
                             class="propertiesImg">
                         </img>
@@ -589,9 +587,9 @@
 
                         <div class="flex flex-col px-2">
                             <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
-                            <span class="propertyLocation text-sm py-1">3 bedroom in school junction for sale</span>
+                            <span class="propertyLocation text-sm py-1">3-Bedroom House in Dansoman</span>
                             <span class="region text-xs py-1 text-gray-500">
-                                Greater Accra, Tema Metropolitan
+                                Greater Accra, Ghana
                             </span>
                             <span id="furbished-state"></span>
                             <span class="size text-xs my-1 font-bold bg-gray-100 rounded-full w-fit px-3 py-2">100
@@ -600,7 +598,7 @@
                     </button>
 
                     <button id="properties"
-                        class="properties">
+                       onclick="getSingleList('prop3')" class="properties">
                         <img src="./img/houses (1).jpg"
                             class="propertiesImg">
                         </img>
@@ -618,7 +616,7 @@
                         <div class="flex flex-col px-2">
                             <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
                             <span class="text-xs text-green-500">Outright price</span>
-                            <span class="propertyLocation text-sm py-1">Tsopoli</span>
+                            <span class="propertyLocation text-sm py-1">Oyarifa</span>
                             <span class="region text-sm py-1">Greater Accra, Tema Metropolitan</span>
                             <span class="size text-xs my-1 font-bold bg-gray-100 w-fit py-2 px-3 rounded-full">650
                                 sqm</span>
@@ -626,7 +624,7 @@
                     </button>
 
                     <button id="properties"
-                        class="properties">
+                       onclick="getSingleList('prop4')" class="properties">
                         <img src="./img/houses (4).jpg"
                             class="propertiesImg">
                         </img>
@@ -643,8 +641,8 @@
                         </span>
                         <div class="flex flex-col px-2">
                             <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
-                            <span class="propertyLocation text-sm py-1">3 bedroom in school junction for sale</span>
-                            <span class="region text-xs py-1 text-gray-500">Greater Accra, Tema Metropolitan</span>
+                            <span class="propertyLocation text-sm py-1">6-Bedroom House in Techiman</span>
+                            <span class="region text-xs py-1 text-gray-500">Brong Ahafo</span>
                             <span id="furbished-state"></span>
                             <span class="size text-xs my-1 font-bold bg-gray-100 rounded-full w-fit px-3 py-2">100
                                 sqm</span>
@@ -652,7 +650,7 @@
                     </button>
 
                     <button id="properties"
-                        class="properties">
+                       onclick="getSingleList('prop5')" class="properties">
 
                         <!-- The property img -->
                         <img src="./img/houses (5).jpg"
@@ -673,8 +671,8 @@
                         <!-- Info about the property -->
                         <div class="flex flex-col px-2">
                             <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
-                            <span class="propertyLocation text-sm py-1">3 bedroom in school junction for sale</span>
-                            <span class="region text-xs py-1 text-gray-500">Greater Accra, Tema Metropolitan</span>
+                            <span class="propertyLocation text-sm py-1">4-Bedroom House in Kumasi</span>
+                            <span class="region text-xs py-1 text-gray-500">Ashanti Region</span>
                             <span class="furbished-state text-xs my-1 font-bold">Unfurbished</span>
                             <span class="size text-xs my-1 font-bold bg-gray-100 rounded-full w-fit px-3 py-2">100
                                 sqm</span>
@@ -682,7 +680,7 @@
                     </button>
 
                     <button id="properties"
-                        class="properties">
+                       onclick="getSingleList('prop6')" class="properties">
 
                         <!-- The property img -->
                         <img src="./img/houses (6).jpg"
@@ -705,8 +703,8 @@
                         <!-- Info about the property -->
                         <div class="flex flex-col px-2">
                             <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
-                            <span class="propertyLocation text-sm py-1">3 bedroom in school junction for sale</span>
-                            <span class="region text-xs py-1 text-gray-500">Greater Accra, Tema Metropolitan</span>
+                            <span class="propertyLocation text-sm py-1">2-Bedroom House in Koforidua</span>
+                            <span class="region text-xs py-1 text-gray-500">Easter Region</span>
                             <span class="furbished-state text-xs my-1 font-bold">Semi-furbished</span>
                             <span class="size text-xs my-1 font-bold bg-gray-100 rounded-full w-fit px-3 py-2">
                                 100 sqm
@@ -719,7 +717,110 @@
         </section>
     </main>
 
-    <footer class="mt-4 lg:mt-0">
+    <section id="singleList" class="absolute top-0 lg:top-6 left-0 right-0 lg:w-[890px] hidden lg:hidden lg:flex-col lg:justify-center lg:items-center mx-auto bg-green-50 z-50 lg:rounded-lg lg:py-8">
+        <div class="lg:w-[800px]">
+        <div class="my-2 flex flex-col justify-center items-center" >
+            <img alt="" id="singlePropertyImg" src="./img/house-1477041_1280.jpg" alt="" class="w-[96%] h-[67vh]  mx-auto block rounded-2xl object-cover relative lg:rounded">
+
+            <a href="#" id="closeSingleList" class="absolute lg:hidden top-4 left-3 md:left-5 bg-white rounded-full p-2 bg-opacity-20">
+                <img alt=""  class="w-6 h-6" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA9UlEQVR4nO3YTUsCURjF8YNt5h6/UcvIyNqZhZtaVvShdaMboYVEL5B6Ym6C4AstEvW5nB/czez+zMyd5w5gZmZmZrY3Sl0ojaE0gXiPkFT1IE4h6nfVMThBKEq3EL+XETnkFUIDYSjdrEfUd6a6QxjiFcSvlYgZxAeEIbY3RMwhPiIM8RLi53pEekIY4sWWiGeEoWZrS8QLwlDzHOJH9IgziO8rEftcg7y5/C+iOoX4dsAILdbQIUf0aPXzlr8TRbzsRW2/RX0QixpRihoaixrj/zxYpS7C0aajLkco4+cDg4bUlDo5oJ6LxOt8zczMzMwMR+QHRscAUQaUvEMAAAAASUVORK5CYII=">
+            </a>
+        </div>
+        <div class="mx-4 my-4 flex flex-col">
+            <span id="costOfProperty" class="text-xl font-semibold text-green-600 md:text-2xl font-poppins">
+                GH¢ 15,0432
+            </span>
+            <span id="titleOfProp" class="text-2xl font-semibold text-gray-900 pt-1 md:text-3xl lg:pt-2">
+                3 Bedroom House in Dansoman
+            </span>
+            <span class="flex justify-start items-center py-1">
+                <!-- Insert location button -->
+                <img alt="" src="https://img.icons8.com/ios/50/null/marker--v1.png" class="h-5 w-5 "/>
+                <span id="locationOfProperty" class="font-poppins text-gray-700 pl-1">Dansoman, Greater Accra - Ghana</span>
+            </span>
+            <div class="py-2">
+                <h2 class="font-poppins font-semibold py-1 md:text-lg">
+                    Facilities
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 font-poppins text-gray-700">
+                    <div class="grid grid-cols-1 grid-rows-3 gap-2 py-1 ">
+                        <span class="flex justify-start items-center py-1">
+                            <img alt="" src="https://img.icons8.com/fluency-systems-regular/48/null/bedroom.png" class="h-6 w-6">
+                            <span id="numberOfBedRooms" class="pl-2">3-Bedrooms</span>
+                        </span>
+                        <span class="flex justify-start items-center py-1">
+                            <img alt="" src="https://img.icons8.com/small/16/null/restaurant-membership-card.png" class="6-5 w-6"/>
+                            <span class="pl-2">Dining Area</span>
+                        </span>
+                        <span class="flex justify-start items-center py-1">
+                            <img alt="" src="https://img.icons8.com/material-outlined/24/null/balcony.png" class="6-5 w-6"/>
+                            <span class="pl-2">Balcony</span>
+                        </span>
+                    </div>
+                    <div class="grid grid-cols-1 grid-rows-3 gap-2 py-1 ">
+                        <span class="flex justify-start items-center py-1">
+                            <img alt="" src="https://img.icons8.com/external-neu-royyan-wijaya/32/null/external-bath-neu-furniture-neu-royyan-wijaya.png" class="h-6 w-6"/>
+                            <span class="pl-2">2-Bathroom</span>
+                        </span>
+                        <span class="flex justify-start items-center py-1">
+                            <img alt="" src="https://img.icons8.com/material-outlined/24/null/air-conditioner.png" class="6-5 w-6"/>
+                            <span class="pl-2">Airconditioner</span>
+                        </span>
+                        <span class="flex justify-start items-center py-1">
+                            <img alt="" src="https://img.icons8.com/ios-filled/50/null/expand--v1.png" class="h-5 w-5"/>
+                            <span class="pl-2">250ft
+                        </span>
+                    </div>
+
+                    <div class="md:grid grid-cols-1 grid-rows-3 gap-2 py-1 hidden">
+                        <span class="flex justify-start items-center py-1">
+                            <img src="https://img.icons8.com/ios/50/null/car--v1.png" class="h-6 w-6"/>
+                            <span class="pl-2">Car Pack</span>
+                        </span>
+                        <span class="flex justify-start items-center py-1">
+                            <img src="https://img.icons8.com/ios/50/null/electricity.png" class="6-5 w-6"/>
+                            <span class="pl-2">Electricity supply</span>
+                        </span>
+                        <span class="flex justify-start items-center py-1">
+                            <img src="https://img.icons8.com/material-outlined/24/null/water.png" class="h-5 w-5"/>
+                            <span class="pl-2">Water supply</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="py-2">
+                <h2 class="font-poppins font-semibold py-1 md:text-lg">
+                    Details
+                </h2>
+                <span class="font-poppins text-gray-700 py-1">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad illo odio quia ipsam, quod id consequuntur officia enim numquam vel distinctio minima doloribus dolorem odit.
+                </span>
+            </div>
+            <div class="py-2">
+                <h2 class="font-poppins font-semibold md:text-lg">
+                    Contact
+                </h2>
+                <div class="flex flex-wrap justify-start font-poppins text-gray-700">
+                    <span class="pr-2 flex justify-center items-center py-1">
+                        <img alt="" src="https://img.icons8.com/material-outlined/24/null/mail.png" class="h-6 w-6"/><span class="pl-2">email@gmail.com</span>
+                    </span>
+                    <span class="pr-2 flex justify-center items-center">
+                        <img alt="" src="https://img.icons8.com/fluency-systems-regular/48/null/phone.png" class="h-6 w-6"/>
+                        <span>+233593353355</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="py-4 flex justify-center items-center lg:justify-start"> 
+                <button type="button" class="bg-green-700 w-60 h-12 text-gray-50 rounded-2xl text-lg font-semibold hover:bg-green-500 transition-colors delay-300 ease-in-out">Buy Now</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <footer class="mt-4 lg:mt-0 z-0">
         <!-- The part showing the total number of results and pages the user can view -->
         <section class="h-24 w-screen bg-white flex flex-col justify-evenly items-center lg:bg-gray-100">
             <div class="flex justify-center items-center my-2">
@@ -763,6 +864,7 @@
 
     <script src="index.js"></script>
     <script src="location.js"></script>
+    <script src="singleListing.js"></script>
 </body>
 
 </html>

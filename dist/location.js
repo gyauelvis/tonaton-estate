@@ -25,6 +25,14 @@ getOverlay.addEventListener("click", (e) => {
   e.preventDefault();
   document.querySelector("body").classList.remove("fixed");
   getOverlay.classList.replace("md:block", "md:hidden");
+  // Checking if the single list has been popped up
+  if (singleList.classList.contains("block")) {
+    singleList.classList.replace("block", "hidden");
+    singleList.classList.replace("lg:flex", "lg:hidden");
+    document.querySelector("main").classList.remove("fixed");
+    document.querySelector("footer").classList.remove("fixed");
+    document.querySelector("nav").classList.replace("fixed", "sticky");
+  }
   regionSec.classList.replace("visible", "invisible");
   regionSec.classList.replace("opacity-100", "opacity-0");
   regionSec.classList.replace("translate-y-0", "translate-y-full");
