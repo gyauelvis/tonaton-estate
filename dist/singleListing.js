@@ -1,37 +1,37 @@
 // Object that contains info about the various properties
 let PropertiesOnPage = {
   prop1: [
-    "./img/houses (1).jpg",
+    "./img/house (8).jpg",
     "Tsopoli Greater Accra, Ghana",
     "5-Bedrooms",
     "GH¢ 15,0432",
   ],
   prop2: [
-    "./img/houses (2).jpg",
+    "./img/house (2).jpg",
     "Dansoman, Greater Accra - Ghana",
     "3-Bedrooms",
     "GH¢ 15,0432",
   ],
   prop3: [
-    "./img/houses (1).jpg",
+    "./img/house (7).jpg",
     "Oyarifa Greater Accra - Ghana",
     "5-Bedrooms",
     "GH¢ 15,0432",
   ],
   prop4: [
-    "./img/houses (4).jpg",
+    "./img/house (4).jpg",
     "Techiman Brong Ahafo - Ghana",
     "6-Bedrooms",
     "GH¢ 15,0432",
   ],
   prop5: [
-    "./img/houses (5).jpg",
+    "./img/house (9).jpg",
     "Kumasi, Ashanti region - Ghana",
     "4-Bedrooms",
     "GH¢ 15,0432",
   ],
   prop6: [
-    "./img/houses (6).jpg",
+    "./img/house (6).jpg",
     "Koforidua, Eastern - Ghana",
     "2-Bedrooms",
     "GH¢ 15,0432",
