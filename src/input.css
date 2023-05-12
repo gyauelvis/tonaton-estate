@@ -7,7 +7,7 @@
     @apply flex flex-row items-center mb-3;
   }
   .properties {
-    @apply bg-white text-left rounded w-[48%] md:w-[100%] lg:w-[48%] md:flex md:flex-row lg:flex lg:flex-row md:h-48 relative hover:shadow-lg border-green-100 border hover:border-white items-center transition ease-in-out delay-300 lg:my-1;
+    @apply bg-white text-left rounded w-[100%] my-1 lg:w-[100%] h-fit md:flex md:flex-row lg:flex lg:flex-row md:h-48 relative hover:shadow-lg border-green-100 border hover:border-white items-center transition ease-in-out delay-300 lg:my-1;
   }
   .propertiesImg {
     @apply rounded md:w-[50%] md:object-cover md:h-[100%] lg:h-[100%];

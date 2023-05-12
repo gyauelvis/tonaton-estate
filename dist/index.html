@@ -534,191 +534,194 @@
 
 
                 <!-- The images of properties and their info -->
-                <section id="sellingProperties" class="bg-gray-100 py-2 px-2 flex flex-row md:flex-col lg:flex-row justify-evenly flex-wrap items-start relative">
+                <section id="sellingProperties" class="bg-gray-100 py-2 px-2 flex flex-row md:flex-col lg:flex-row justify-evenly relative">
+                    <div class="flex flex-col w-[48%] md:w-full lg:w-[48%]">
+                        <button id="properties"
+                        onclick="getSingleList('prop1')" class="properties cols">
 
-                    <button id="properties"
-                       onclick="getSingleList('prop1')" class="properties">
+                            <!-- The img of the property -->
+                            <img src="./img/house (8).jpg"
+                                class="propertiesImg">
+                            </img>
 
-                        <!-- The img of the property -->
-                        <img src="./img/house (8).jpg"
-                            class="propertiesImg">
-                        </img>
-
-                        <!-- The previous button on the img -->
-                        <span id="propPrev" class="propPrev1">
-                            <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
-                        </span>
-                        <!-- The next button on the img -->
-                        <span id="propForw"
-                            class="propForw1">
-                            <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
-                        </span>
-
-                        <!-- The info related to the property -->
-                        <div class="flex flex-col px-2">
-                            <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
-                            <span class="text-xs text-green-500">Outright price</span>
-                            <span class="propertyLocation text-sm py-1">Tsopoli</span>
-                            <span class="region text-sm py-1">Greater Accra, Tema Metropolitan</span>
-                            <span class="size text-xs my-1 font-bold bg-gray-100 w-fit py-2 px-3 rounded-full">650
-                                sqm</span>
-                        </div>
-                    </button>
-
-                    <button id="properties"
-                       onclick="getSingleList('prop2')" class="properties">
-                        <img src="./img/house (2).jpg"
-                            class="propertiesImg">
-                        </img>
-
-                        <!-- The previous button on the img -->
-                        <span id="propPrev" class="propPrev1">
-                            <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
-                        </span>
-                        <!-- The next button on the img -->
-                        <span id="propForw"
-                            class="propForw1">
-                            <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
-                        </span>
-
-                        <div class="flex flex-col px-2">
-                            <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
-                            <span class="propertyLocation text-sm py-1">3-Bedroom House in Dansoman</span>
-                            <span class="region text-xs py-1 text-gray-500">
-                                Greater Accra, Ghana
+                            <!-- The previous button on the img -->
+                            <span id="propPrev" class="propPrev1">
+                                <img class="w-3 h-3"
+                                    src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
                             </span>
-                            <span id="furbished-state"></span>
-                            <span class="size text-xs my-1 font-bold bg-gray-100 rounded-full w-fit px-3 py-2">100
-                                sqm</span>
-                        </div>
-                    </button>
-
-                    <button id="properties"
-                       onclick="getSingleList('prop3')" class="properties">
-                        <img src="./img/house (7).jpg"
-                            class="propertiesImg">
-                        </img>
-                        <!-- The previous button on the img -->
-                        <span id="propPrev" class="propPrev1">
-                            <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
-                        </span>
-                        <!-- The next button on the img -->
-                        <span id="propForw"
-                            class="propForw1">
-                            <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
-                        </span>
-                        <div class="flex flex-col px-2">
-                            <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
-                            <span class="text-xs text-green-500">Outright price</span>
-                            <span class="propertyLocation text-sm py-1">Oyarifa</span>
-                            <span class="region text-sm py-1">Greater Accra, Tema Metropolitan</span>
-                            <span class="size text-xs my-1 font-bold bg-gray-100 w-fit py-2 px-3 rounded-full">650
-                                sqm</span>
-                        </div>
-                    </button>
-
-                    <button id="properties"
-                       onclick="getSingleList('prop4')" class="properties">
-                        <img src="./img/house (4).jpg"
-                            class="propertiesImg">
-                        </img>
-                        <!-- The previous button on the img -->
-                        <span id="propPrev" class="propPrev1">
-                            <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
-                        </span>
-                        <!-- The next button on the img -->
-                        <span id="propForw"
-                            class="propForw1">
-                            <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
-                        </span>
-                        <div class="flex flex-col px-2">
-                            <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
-                            <span class="propertyLocation text-sm py-1">6-Bedroom House in Techiman</span>
-                            <span class="region text-xs py-1 text-gray-500">Brong Ahafo</span>
-                            <span id="furbished-state"></span>
-                            <span class="size text-xs my-1 font-bold bg-gray-100 rounded-full w-fit px-3 py-2">100
-                                sqm</span>
-                        </div>
-                    </button>
-
-                    <button id="properties"
-                       onclick="getSingleList('prop5')" class="properties">
-
-                        <!-- The property img -->
-                        <img src="./img/house (9).jpg"
-                            class="propertiesImg">
-                        </img>
-                        <!-- The previous button on the img -->
-                        <span id="propPrev" class="propPrev1">
-                            <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
-                        </span>
-                        <!-- The next button on the img -->
-                        <span id="propForw"
-                            class="propForw1">
-                            <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
-                        </span>
-
-                        <!-- Info about the property -->
-                        <div class="flex flex-col px-2">
-                            <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
-                            <span class="propertyLocation text-sm py-1">4-Bedroom House in Kumasi</span>
-                            <span class="region text-xs py-1 text-gray-500">Ashanti Region</span>
-                            <span class="furbished-state text-xs my-1 font-bold">Unfurbished</span>
-                            <span class="size text-xs my-1 font-bold bg-gray-100 rounded-full w-fit px-3 py-2">100
-                                sqm</span>
-                        </div>
-                    </button>
-
-                    <button id="properties"
-                       onclick="getSingleList('prop6')" class="properties">
-
-                        <!-- The property img -->
-                        <img src="./img/house (6).jpg"
-                            class="propertiesImg">
-                        </img>
-
-                        <!-- The previous button on the img -->
-                        <span id="propPrev" class="propPrev1">
-                            <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
-                        </span>
-
-                        <!-- The next button on the img -->
-                        <span id="propForw"
-                            class="propForw1">
-                            <img class="w-3 h-3"
-                                src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png" alt=" " />
-                        </span>
-
-                        <!-- Info about the property -->
-                        <div class="flex flex-col px-2">
-                            <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
-                            <span class="propertyLocation text-sm py-1">2-Bedroom House in Koforidua</span>
-                            <span class="region text-xs py-1 text-gray-500">Easter Region</span>
-                            <span class="furbished-state text-xs my-1 font-bold">Semi-furbished</span>
-                            <span class="size text-xs my-1 font-bold bg-gray-100 rounded-full w-fit px-3 py-2">
-                                100 sqm
+                            <!-- The next button on the img -->
+                            <span id="propForw"
+                                class="propForw1">
+                                <img class="w-3 h-3"
+                                    src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
                             </span>
-                        </div>
-                    </button>
 
+                            <!-- The info related to the property -->
+                            <div class="flex flex-col px-2">
+                                <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
+                                <span class="text-xs text-green-500">Outright price</span>
+                                <span class="propertyLocation text-sm py-1">Tsopoli</span>
+                                <span class="region text-sm py-1">Greater Accra, Tema Metropolitan</span>
+                                <span class="size text-xs my-1 font-bold bg-gray-100 w-fit py-2 px-3 rounded-full">650
+                                    sqm</span>
+                            </div>
+                        </button>
+
+                        <button id="properties"
+                        onclick="getSingleList('prop2')" class="properties">
+                            <img src="./img/house (2).jpg"
+                                class="propertiesImg">
+                            </img>
+
+                            <!-- The previous button on the img -->
+                            <span id="propPrev" class="propPrev1">
+                                <img class="w-3 h-3"
+                                    src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
+                            </span>
+                            <!-- The next button on the img -->
+                            <span id="propForw"
+                                class="propForw1">
+                                <img class="w-3 h-3"
+                                    src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
+                            </span>
+
+                            <div class="flex flex-col px-2">
+                                <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
+                                <span class="propertyLocation text-sm py-1">3-Bedroom House in Dansoman</span>
+                                <span class="region text-xs py-1 text-gray-500">
+                                    Greater Accra, Ghana
+                                </span>
+                                <span id="furbished-state"></span>
+                                <span class="size text-xs my-1 font-bold bg-gray-100 rounded-full w-fit px-3 py-2">100
+                                    sqm</span>
+                            </div>
+                        </button>
+
+                        <button id="properties"
+                        onclick="getSingleList('prop3')" class="properties">
+                            <img src="./img/house (7).jpg"
+                                class="propertiesImg">
+                            </img>
+                            <!-- The previous button on the img -->
+                            <span id="propPrev" class="propPrev1">
+                                <img class="w-3 h-3"
+                                    src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
+                            </span>
+                            <!-- The next button on the img -->
+                            <span id="propForw"
+                                class="propForw1">
+                                <img class="w-3 h-3"
+                                    src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
+                            </span>
+                            <div class="flex flex-col px-2">
+                                <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
+                                <span class="text-xs text-green-500">Outright price</span>
+                                <span class="propertyLocation text-sm py-1">Oyarifa</span>
+                                <span class="region text-sm py-1">Greater Accra, Tema Metropolitan</span>
+                                <span class="size text-xs my-1 font-bold bg-gray-100 w-fit py-2 px-3 rounded-full">650
+                                    sqm</span>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="flex flex-col w-[48%] md:w-full lg:w-[48%]">
+
+                        <button id="properties"
+                        onclick="getSingleList('prop4')" class="properties">
+                            <img src="./img/house (4).jpg"
+                                class="propertiesImg">
+                            </img>
+                            <!-- The previous button on the img -->
+                            <span id="propPrev" class="propPrev1">
+                                <img class="w-3 h-3"
+                                    src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
+                            </span>
+                            <!-- The next button on the img -->
+                            <span id="propForw"
+                                class="propForw1">
+                                <img class="w-3 h-3"
+                                    src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
+                            </span>
+                            <div class="flex flex-col px-2">
+                                <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
+                                <span class="propertyLocation text-sm py-1">6-Bedroom House in Techiman</span>
+                                <span class="region text-xs py-1 text-gray-500">Brong Ahafo</span>
+                                <span id="furbished-state"></span>
+                                <span class="size text-xs my-1 font-bold bg-gray-100 rounded-full w-fit px-3 py-2">100
+                                    sqm</span>
+                            </div>
+                        </button>
+
+                        <button id="properties"
+                        onclick="getSingleList('prop5')" class="properties">
+
+                            <!-- The property img -->
+                            <img src="./img/house (9).jpg"
+                                class="propertiesImg">
+                            </img>
+                            <!-- The previous button on the img -->
+                            <span id="propPrev" class="propPrev1">
+                                <img class="w-3 h-3"
+                                    src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
+                            </span>
+                            <!-- The next button on the img -->
+                            <span id="propForw"
+                                class="propForw1">
+                                <img class="w-3 h-3"
+                                    src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
+                            </span>
+
+                            <!-- Info about the property -->
+                            <div class="flex flex-col px-2">
+                                <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
+                                <span class="propertyLocation text-sm py-1">4-Bedroom House in Kumasi</span>
+                                <span class="region text-xs py-1 text-gray-500">Ashanti Region</span>
+                                <span class="furbished-state text-xs my-1 font-bold">Unfurbished</span>
+                                <span class="size text-xs my-1 font-bold bg-gray-100 rounded-full w-fit px-3 py-2">100
+                                    sqm</span>
+                            </div>
+                        </button>
+
+                        <button id="properties"
+                        onclick="getSingleList('prop6')" class="properties">
+
+                            <!-- The property img -->
+                            <img src="./img/house (6).jpg"
+                                class="propertiesImg">
+                            </img>
+
+                            <!-- The previous button on the img -->
+                            <span id="propPrev" class="propPrev1">
+                                <img class="w-3 h-3"
+                                    src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png"/>
+                            </span>
+
+                            <!-- The next button on the img -->
+                            <span id="propForw"
+                                class="propForw1">
+                                <img class="w-3 h-3"
+                                    src="https://img.icons8.com/fluency-systems-filled/24/null/more-than.png" alt=" " />
+                            </span>
+
+                            <!-- Info about the property -->
+                            <div class="flex flex-col px-2">
+                                <h2 class="text-lg py-2 text-green-500 font-bold">GH¢ 15,0432</h2>
+                                <span class="propertyLocation text-sm py-1">2-Bedroom House in Koforidua</span>
+                                <span class="region text-xs py-1 text-gray-500">Easter Region</span>
+                                <span class="furbished-state text-xs my-1 font-bold">Semi-furbished</span>
+                                <span class="size text-xs my-1 font-bold bg-gray-100 rounded-full w-fit px-3 py-2">
+                                    100 sqm
+                                </span>
+                            </div>
+                        </button>
+                    </div>
                 </section>
             </section>
         </section>
     </main>
 
     <section id="singleList" class="absolute top-0 lg:top-6 left-0 right-0 lg:w-[890px] hidden lg:hidden lg:flex-col lg:justify-center lg:items-center mx-auto bg-green-50 z-50 lg:rounded-lg lg:py-8">
-        <div class="lg:w-[800px]">
+        <div class="lg:w-[800px] px-2">
         <div class="my-2 flex flex-col justify-center items-center" >
             <img alt="" id="singlePropertyImg" src="./img/house-1477041_1280.jpg" alt="" class="w-[96%] h-[67vh]  mx-auto block rounded-2xl object-cover relative lg:rounded">
 
@@ -727,16 +730,12 @@
             </a>
         </div>
         <div class="mx-4 my-4 flex flex-col">
-            <span id="costOfProperty" class="text-xl font-semibold text-green-600 md:text-2xl font-poppins">
-                GH¢ 15,0432
-            </span>
-            <span id="titleOfProp" class="text-2xl font-semibold text-gray-900 pt-1 md:text-3xl lg:pt-2">
-                3 Bedroom House in Dansoman
-            </span>
+            <span id="costOfProperty" class="text-xl font-semibold text-green-600 md:text-2xl font-poppins"></span>
+            <span id="titleOfProp" class="text-2xl font-semibold text-gray-900 pt-1 md:text-3xl lg:pt-2"></span>
             <span class="flex justify-start items-center py-1">
                 <!-- Insert location button -->
                 <img alt="" src="https://img.icons8.com/ios/50/null/marker--v1.png" class="h-5 w-5 "/>
-                <span id="locationOfProperty" class="font-poppins text-gray-700 pl-1">Dansoman, Greater Accra - Ghana</span>
+                <span id="locationOfProperty" class="font-poppins text-gray-700 pl-1"></span>
             </span>
             <div class="py-2">
                 <h2 class="font-poppins font-semibold py-1 md:text-lg">
@@ -746,7 +745,7 @@
                     <div class="grid grid-cols-1 grid-rows-3 gap-2 py-1 ">
                         <span class="flex justify-start items-center py-1">
                             <img alt="" src="https://img.icons8.com/fluency-systems-regular/48/null/bedroom.png" class="h-6 w-6">
-                            <span id="numberOfBedRooms" class="pl-2">3-Bedrooms</span>
+                            <span id="numberOfBedRooms" class="pl-2"></span>
                         </span>
                         <span class="flex justify-start items-center py-1">
                             <img alt="" src="https://img.icons8.com/small/16/null/restaurant-membership-card.png" class="6-5 w-6"/>
