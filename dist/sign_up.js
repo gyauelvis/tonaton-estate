@@ -5,13 +5,14 @@ const getUserName = document.querySelector("#name");
 const passwordHelp = document.querySelector("#passwordHelp");
 const switchToCreateAcc = document.querySelector("#switchToCreateAcc");
 const submitFxn = (e) => {
-const emailRegex = /.+@.+.\..+/;
-const digitRegex = /[0-9]/;
-const smallLetterRegex = /[a-z]/;
-const capsRegex = /[A-Z]/;
-const symbolRegex = /[!@#$%^&*(),.?":{}|_<>]/;
-let emailValue = getEmail.value;
-let passwordValue = getPassword.value;
+  const emailRegex = /.+@.+.\..+/;
+  const digitRegex = /[0-9]/;
+  const smallLetterRegex = /[a-z]/;
+  const capsRegex = /[A-Z]/;
+  const symbolRegex = /[!@#$%^&*(),.?":{}|_<>]/;
+  let emailValue = getEmail.value;
+  let passwordValue = getPassword.value;
+
   if (emailRegex.test(emailValue)) {
     getEmail.classList.remove("border-red-700");
   } else {
@@ -55,3 +56,20 @@ switchToCreateAcc.addEventListener("click", (e) => {
 });
 
 getSubmitBtn.addEventListener("click", submitFxn);
+
+// Hidding the login screen and showing the forget password screen
+document.querySelector("#forgot_password").addEventListener("click", (e) => {
+  e.preventDefault();
+  getLoginForms.classList.replace("flex", "hidden");
+  document
+    .querySelector("#forget_password_window")
+    .classList.replace("hidden", "flex");
+});
+
+document.querySelector("#sign_in").addEventListener("click", (e) => {
+  e.preventDefault();
+  getLoginForms.classList.replace("hidden", "flex");
+  document
+    .querySelector("#forget_password_window")
+    .classList.replace("flex", "hidden");
+});
